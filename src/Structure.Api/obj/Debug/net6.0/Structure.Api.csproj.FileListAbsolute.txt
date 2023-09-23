@@ -104,3 +104,5 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.genruntimeconfig.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\ref\Structure.Api.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

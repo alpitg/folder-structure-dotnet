@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using Structure.Common.UnitOfWork;
+using Structure.Repository.UnitOfWork;
 using Structure.Data;
 
-namespace Structure.Common.GenericRepository
+namespace Structure.Repository.GenericRepository
 {
     public class GenericRepository<TC, TContext> : IGenericRepository<TC>
         where TC : class

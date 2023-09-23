@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Structure.Repository;
-using Structure.API.Helpers;
+using Structure.Api.Helpers;
 using Structure.Data.Resources;
 
 namespace Structure.Api.Controllers

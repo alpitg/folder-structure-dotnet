@@ -231,7 +231,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -244,6 +248,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
@@ -307,6 +319,9 @@
             "projectReferences": {
               "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj": {
                 "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj"
+              },
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj"
               }
             }
           }
@@ -321,6 +336,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.11, )"
@@ -408,15 +427,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
             "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.7.1, )"
             },

@@ -1,11 +1,14 @@
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\bin\Debug\net6.0\Structure.Helper.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\bin\Debug\net6.0\Structure.Helper.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\bin\Debug\net6.0\Structure.Helper.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\bin\Debug\net6.0\Structure.Data.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\bin\Debug\net6.0\Structure.Data.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.csproj.AssemblyReference.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.GeneratedMSBuildEditorConfig.editorconfig
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.AssemblyInfoInputs.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.AssemblyInfo.cs
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.csproj.CoreCompileInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.csproj.CopyComplete
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\refint\Structure.Helper.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Helper\obj\Debug\net6.0\Structure.Helper.pdb

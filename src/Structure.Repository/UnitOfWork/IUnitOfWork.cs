@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Structure.Common.UnitOfWork
+namespace Structure.Repository.UnitOfWork
 {
     public interface IUnitOfWork<TContext>
         where TContext : DbContext

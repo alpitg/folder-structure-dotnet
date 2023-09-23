@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Structure.Common.UnitOfWork;
+using Structure.Repository.UnitOfWork;
 using Structure.Data;
 using Structure.Data.Dto;
 using Structure.Domain;

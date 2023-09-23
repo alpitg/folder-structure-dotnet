@@ -4,7 +4,7 @@ using Microsoft.Extensions.Primitives;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace Structure.API.Helpers
+namespace Structure.Api.Helpers
 {
     public class ClaimCheckAttribute : Attribute, IActionFilter
     {

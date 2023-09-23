@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Structure.Common.UnitOfWork;
+using Structure.Repository.UnitOfWork;
 using Structure.Data;
 using Structure.Data.Dto;
 using Structure.Domain;

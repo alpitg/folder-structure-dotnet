@@ -1,4 +1,4 @@
-﻿using Structure.Common.GenericRepository;
+﻿using Structure.Repository.GenericRepository;
 using Structure.Data;
 using Structure.Data.Dto;
 using Structure.Data.Resources;

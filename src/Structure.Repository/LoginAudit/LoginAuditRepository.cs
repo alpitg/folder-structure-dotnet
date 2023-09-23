@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Structure.Common.GenericRepository;
-using Structure.Common.UnitOfWork;
+using Structure.Repository.GenericRepository;
+using Structure.Repository.UnitOfWork;
 using Structure.Data;
 using Structure.Data.Dto;
 using Structure.Data.Resources;

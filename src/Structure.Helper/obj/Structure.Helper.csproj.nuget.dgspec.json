@@ -4,14 +4,14 @@
     "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {}
   },
   "projects": {
-    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
-        "projectName": "Structure.Helper",
-        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
+        "projectName": "Structure.Data",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
         "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
-        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\obj\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,79 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
+        "projectName": "Structure.Helper",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"

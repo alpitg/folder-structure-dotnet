@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Structure.Data;
 using Structure.Data.Dto;
 
-namespace Structure.Common.UnitOfWork
+namespace Structure.Repository.UnitOfWork
 {
     public class UnitOfWork<TContext> : IUnitOfWork<TContext>
         where TContext : DbContext
