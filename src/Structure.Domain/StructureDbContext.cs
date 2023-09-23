@@ -19,8 +19,8 @@ namespace Structure.Domain
         public override DbSet<RoleClaim> RoleClaims { get; set; }
         public override DbSet<UserToken> UserTokens { get; set; }
 
-        //public DbSet<Data.Action> Actions { get; set; }
-        //public DbSet<Page> Pages { get; set; }
+        public DbSet<Data.Action> Actions { get; set; }
+        public DbSet<Page> Pages { get; set; }
         //public DbSet<NLog> NLog { get; set; }
         public DbSet<LoginAudit> LoginAudits { get; set; }
         //public DbSet<EmailTemplate> EmailTemplates { get; set; }

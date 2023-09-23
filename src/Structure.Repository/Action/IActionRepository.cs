@@ -3,7 +3,7 @@ using Structure.Data;
 
 namespace Structure.Repository
 {
-    public interface IActionRepository : IGenericRepository<Action>
+    public interface IActionRepository : IGenericRepository<Data.Action>
     {
     }
 }

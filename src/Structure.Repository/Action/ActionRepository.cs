@@ -5,7 +5,7 @@ using Structure.Domain;
 
 namespace Structure.Repository
 {
-    public class ActionRepository : GenericRepository<Action, StructureDbContext>,
+    public class ActionRepository : GenericRepository<Data.Action, StructureDbContext>,
           IActionRepository
     {
         public ActionRepository(

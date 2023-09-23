@@ -22,7 +22,6 @@ builder.Services.AddDbContextExt(configuration);
 
 var assembly = AppDomain.CurrentDomain.Load("Structure.MediatR");
 var defaultUserId = configuration.GetSection("DefaultUser").GetSection("DefaultUserId").Value;
-//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddValidatorsFromAssemblies(Enumerable.Repeat(assembly, 1));
@@ -30,7 +29,6 @@ builder.Services.AddValidatorsFromAssemblies(Enumerable.Repeat(assembly, 1));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 
-builder.Services.AddJwtExt(configuration);
 builder.Services.AddSingleton(new PathHelper(configuration));
 builder.Services.AddScoped(c => new UserInfoToken() { Id = defaultUserId });
 
@@ -48,6 +46,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 builder.Services.AddSingleton(MapperConfig.GetMapperConfigs());
 builder.Services.AddDependencyInjection();
+builder.Services.AddJwtExt(configuration);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy",
@@ -77,15 +76,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerExt();
 }
 
-app.UseHttpsRedirection();
 
 app.UseCors("CORSPolicy");
-
-//app.UseCors(x => x
-//    .AllowAnyOrigin()
-//    .AllowAnyMethod()
-//    .AllowAnyHeader());
-
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseRouting();
 app.UseAuthorization();

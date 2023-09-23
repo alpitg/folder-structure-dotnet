@@ -5,16 +5,16 @@ namespace Structure.Repository
 {
     public class PropertyMappingService : IPropertyMappingService
     {
-        //private Dictionary<string, PropertyMappingValue> _loginAuditMapping =
-        //    new Dictionary<string, PropertyMappingValue>(StringComparer.OrdinalIgnoreCase)
-        //    {
-        //        { "Id", new PropertyMappingValue(new List<string>() { "Id" } ) },
-        //        { "UserName", new PropertyMappingValue(new List<string>() { "UserName" } )},
-        //        { "LoginTime", new PropertyMappingValue(new List<string>() { "LoginTime" } )},
-        //        { "RemoteIP", new PropertyMappingValue(new List<string>() { "RemoteIP" } )},
-        //        { "Status", new PropertyMappingValue(new List<string>() { "Status" } )},
-        //        { "Provider", new PropertyMappingValue(new List<string>() { "Provider" } )}
-        //    };
+        private Dictionary<string, PropertyMappingValue> _loginAuditMapping =
+            new Dictionary<string, PropertyMappingValue>(StringComparer.OrdinalIgnoreCase)
+            {
+                { "Id", new PropertyMappingValue(new List<string>() { "Id" } ) },
+                { "UserName", new PropertyMappingValue(new List<string>() { "UserName" } )},
+                { "LoginTime", new PropertyMappingValue(new List<string>() { "LoginTime" } )},
+                { "RemoteIP", new PropertyMappingValue(new List<string>() { "RemoteIP" } )},
+                { "Status", new PropertyMappingValue(new List<string>() { "Status" } )},
+                { "Provider", new PropertyMappingValue(new List<string>() { "Provider" } )}
+            };
 
         private Dictionary<string, PropertyMappingValue> _userMapping =
             new Dictionary<string, PropertyMappingValue>(StringComparer.OrdinalIgnoreCase)
@@ -279,7 +279,7 @@ namespace Structure.Repository
         private IList<IPropertyMapping> propertyMappings = new List<IPropertyMapping>();
         public PropertyMappingService()
         {
-            //propertyMappings.Add(new PropertyMapping<LoginAuditDto, LoginAudit>(_loginAuditMapping));
+            propertyMappings.Add(new PropertyMapping<LoginAuditDto, LoginAudit>(_loginAuditMapping));
             propertyMappings.Add(new PropertyMapping<UserDto, User>(_userMapping));
             //propertyMappings.Add(new PropertyMapping<NLogDto, NLog>(_nLogMapping));
             //propertyMappings.Add(new PropertyMapping<SupplierDto, Supplier>(_supplierPropertyMapping));

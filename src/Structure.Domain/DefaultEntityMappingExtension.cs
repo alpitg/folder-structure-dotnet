@@ -7,9 +7,9 @@ namespace Structure.Domain
     {
         public static void DefalutMappingValue(this ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Action>()
-            //   .Property(b => b.ModifiedDate)
-            //   .HasDefaultValueSql("GETUTCDATE()");
+            modelBuilder.Entity<Data.Action>()
+               .Property(b => b.ModifiedDate)
+               .HasDefaultValueSql("GETUTCDATE()");
 
             //modelBuilder.Entity<Page>()
             //    .Property(b => b.ModifiedDate)
@@ -73,8 +73,8 @@ namespace Structure.Domain
             modelBuilder.Entity<Role>()
             .HasQueryFilter(p => !p.IsDeleted);
 
-            //modelBuilder.Entity<Action>()
-            //  .HasQueryFilter(p => !p.IsDeleted);
+            modelBuilder.Entity<Data.Action>()
+              .HasQueryFilter(p => !p.IsDeleted);
 
             //modelBuilder.Entity<Page>()
             // .HasQueryFilter(p => !p.IsDeleted);
