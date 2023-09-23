@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Structure.Common.UnitOfWork;
+using Structure.Data;
 
 namespace Structure.Common.GenericRepository
 {

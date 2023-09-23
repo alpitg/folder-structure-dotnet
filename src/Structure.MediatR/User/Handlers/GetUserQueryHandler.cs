@@ -4,11 +4,8 @@ using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
-using System.IO;
 
 namespace Structure.MediatR.Handlers
 {

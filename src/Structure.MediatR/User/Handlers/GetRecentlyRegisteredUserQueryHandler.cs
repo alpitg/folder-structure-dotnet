@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;

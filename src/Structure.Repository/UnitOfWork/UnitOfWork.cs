@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Structure.Data;
 using Structure.Data.Dto;
 
 namespace Structure.Common.UnitOfWork

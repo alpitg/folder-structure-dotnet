@@ -22,7 +22,7 @@ namespace Structure.Domain
         //public DbSet<Data.Action> Actions { get; set; }
         //public DbSet<Page> Pages { get; set; }
         //public DbSet<NLog> NLog { get; set; }
-        //public DbSet<LoginAudit> LoginAudits { get; set; }
+        public DbSet<LoginAudit> LoginAudits { get; set; }
         //public DbSet<EmailTemplate> EmailTemplates { get; set; }
         //public DbSet<EmailSMTPSetting> EmailSMTPSettings { get; set; }
         //public DbSet<Country> Countries { get; set; }

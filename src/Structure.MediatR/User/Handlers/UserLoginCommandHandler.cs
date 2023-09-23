@@ -4,13 +4,8 @@ using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Helper;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.SignalR;
-using System.IO;
 
 namespace Structure.MediatR.Handlers
 {
@@ -20,7 +15,7 @@ namespace Structure.MediatR.Handlers
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
         private readonly ILoginAuditRepository _loginAuditRepository;
-        private readonly IHubContext<UserHub, IHubClient> _hubContext;
+        //private readonly IHubContext<UserHub, IHubClient> _hubContext;
         private readonly PathHelper _pathHelper;
 
         public UserLoginCommandHandler(
@@ -28,7 +23,7 @@ namespace Structure.MediatR.Handlers
             SignInManager<User> signInManager,
             UserManager<User> userManager,
             ILoginAuditRepository loginAuditRepository,
-            IHubContext<UserHub, IHubClient> hubContext,
+            //IHubContext<UserHub, IHubClient> hubContext,
             PathHelper pathHelper
             )
         {
@@ -36,7 +31,7 @@ namespace Structure.MediatR.Handlers
             _signInManager = signInManager;
             _userManager = userManager;
             _loginAuditRepository = loginAuditRepository;
-            _hubContext = hubContext;
+            //_hubContext = hubContext;
             _pathHelper = pathHelper;
         }
         public async Task<ServiceResponse<UserAuthDto>> Handle(UserLoginCommand request, CancellationToken cancellationToken)
@@ -79,7 +74,7 @@ namespace Structure.MediatR.Handlers
                     Email = authUser.Email,
                     Id = authUser.Id.ToString()
                 };
-                await _hubContext.Clients.All.Joined(onlineUser);
+                //await _hubContext.Clients.All.Joined(onlineUser);
                 if (!string.IsNullOrWhiteSpace(authUser.ProfilePhoto))
                 {
                     authUser.ProfilePhoto = Path.Combine(_pathHelper.UserProfilePath, authUser.ProfilePhoto);

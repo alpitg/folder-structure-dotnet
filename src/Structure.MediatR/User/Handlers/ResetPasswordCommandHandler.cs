@@ -3,8 +3,6 @@ using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 

@@ -1,6 +1,4 @@
 ﻿using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 

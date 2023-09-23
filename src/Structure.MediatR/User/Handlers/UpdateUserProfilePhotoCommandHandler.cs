@@ -1,19 +1,14 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Common.UnitOfWork;
 using Structure.Data;
 using Structure.Data.Dto;
 using Structure.Domain;
 using Structure.Helper;
 using Structure.MediatR.CommandAndQuery;
-using Microsoft.AspNetCore.Hosting;
 
 namespace Structure.MediatR.Handlers
 {
@@ -25,7 +20,7 @@ namespace Structure.MediatR.Handlers
         private UserInfoToken _userInfoToken;
         private readonly ILogger<UpdateUserProfileCommandHandler> _logger;
         public readonly PathHelper _pathHelper;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IHostEnvironment _webHostEnvironment;
         public UpdateUserProfilePhotoCommandHandler(
             IMapper mapper,
             IUnitOfWork<StructureDbContext> uow,
@@ -33,7 +28,7 @@ namespace Structure.MediatR.Handlers
             UserManager<User> userManager,
             ILogger<UpdateUserProfileCommandHandler> logger,
             PathHelper pathHelper,
-            IWebHostEnvironment webHostEnvironment
+            IHostEnvironment webHostEnvironment
             )
         {
             _mapper = mapper;
@@ -47,7 +42,7 @@ namespace Structure.MediatR.Handlers
 
         public async Task<ServiceResponse<UserDto>> Handle(UpdateUserProfilePhotoCommand request, CancellationToken cancellationToken)
         {
-            var filePath = Path.Combine(_webHostEnvironment.WebRootPath, _pathHelper.UserProfilePath);
+            var filePath = Path.Combine(_webHostEnvironment.ContentRootPath, _pathHelper.UserProfilePath);
             var appUser = await _userManager.FindByIdAsync(_userInfoToken.Id);
             if (appUser == null)
             {

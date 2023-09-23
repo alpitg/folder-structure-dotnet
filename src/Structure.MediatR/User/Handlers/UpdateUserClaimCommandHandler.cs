@@ -7,11 +7,6 @@ using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Helper;
 
 namespace Structure.MediatR.Handlers

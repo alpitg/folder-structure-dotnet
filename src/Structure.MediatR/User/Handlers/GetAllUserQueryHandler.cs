@@ -4,9 +4,6 @@ using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Structure.MediatR.Handlers
 {

@@ -7,15 +7,9 @@ using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Hosting;
-using System.IO;
+using Microsoft.Extensions.Hosting;
 
 namespace Structure.MediatR.Handlers
 {
@@ -27,7 +21,7 @@ namespace Structure.MediatR.Handlers
         private readonly IMapper _mapper;
         private readonly UserInfoToken _userInfoToken;
         private readonly ILogger<UpdateUserCommandHandler> _logger;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IHostEnvironment _webHostEnvironment;
         private readonly PathHelper _pathHelper;
 
         public UpdateUserCommandHandler(
@@ -37,7 +31,7 @@ namespace Structure.MediatR.Handlers
             UserManager<User> userManager,
             UserInfoToken userInfoToken,
             ILogger<UpdateUserCommandHandler> logger,
-            IWebHostEnvironment webHostEnvironment,
+            IHostEnvironment webHostEnvironment,
             PathHelper pathHelper
             )
         {
@@ -96,7 +90,7 @@ namespace Structure.MediatR.Handlers
 
             if (request.IsImageUpdate)
             {
-                string contentRootPath = _webHostEnvironment.WebRootPath;
+                string contentRootPath = _webHostEnvironment.ContentRootPath;
                 // delete old file
                 if (!string.IsNullOrWhiteSpace(oldProfilePhoto))
                 {

@@ -1,0 +1,15 @@
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Domain.deps.json
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Domain.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Domain.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Data.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Data.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.csproj.AssemblyReference.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.AssemblyInfoInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.AssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.csproj.CoreCompileInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.csproj.CopyComplete
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\refint\Structure.Domain.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\ref\Structure.Domain.dll
