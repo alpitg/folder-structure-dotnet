@@ -1,0 +1,362 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj": {}
+  },
+  "projects": {
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
+        "projectName": "Structure.Data",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj",
+        "projectName": "Structure.Domain",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
+        "projectName": "Structure.Helper",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj",
+        "projectName": "Structure.MediatR",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.MediatR\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              },
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj"
+              },
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj",
+        "projectName": "Structure.Repository",
+        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\Structure.Repository.csproj",
+        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
+        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              },
+              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj": {
+                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.3.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

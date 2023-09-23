@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Structure.Helper\Structure.Helper.csproj" />
+    <ProjectReference Include="..\Structure.Infrastructure\Structure.Infrastructure.csproj" />
+    <ProjectReference Include="..\Structure.MediatR\Structure.MediatR.csproj" />
+  </ItemGroup>
+
+</Project>
