@@ -9,9 +9,9 @@ namespace Structure.Data
         public string LastName { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsActive { get; set; }
-        public string ProfilePhoto { get; set; }
-        public string Provider { get; set; }
-        public string Address { get; set; }
+        public string? ProfilePhoto { get; set; }
+        public string? Provider { get; set; }
+        public string? Address { get; set; }
         public bool IsSuperAdmin { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }

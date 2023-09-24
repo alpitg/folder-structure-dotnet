@@ -17,25 +17,18 @@ var configuration = new ConfigurationBuilder()
 
 // Add services to the container.
 
-builder.Services.AddControllers();
-builder.Services.AddDbContextExt(configuration);
-
 var assembly = AppDomain.CurrentDomain.Load("Structure.MediatR");
 var defaultUserId = configuration.GetSection("DefaultUser").GetSection("DefaultUserId").Value;
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddValidatorsFromAssemblies(Enumerable.Repeat(assembly, 1));
-//builder.Services.AddValidatorsFromAssemblyContaining<OrganisationValidator>(includeInternalTypes: true)
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-
 builder.Services.AddSingleton(new PathHelper(configuration));
 builder.Services.AddScoped(c => new UserInfoToken() { Id = defaultUserId });
-
+builder.Services.AddDbContextExt(configuration);
 builder.Services.AddIdentity<User, Role>()
             .AddEntityFrameworkStores<StructureDbContext>()
             .AddDefaultTokenProviders();
-
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireDigit = false;
@@ -64,6 +57,11 @@ builder.Services.AddCors(options =>
                    .SetIsOriginAllowed(host => true);
         });
 });
+builder.Services.Configure<IISServerOptions>(options =>
+{
+    options.AutomaticAuthentication = false;
+});
+builder.Services.AddControllers();
 builder.Services.AddSwaggerExt();
 
 

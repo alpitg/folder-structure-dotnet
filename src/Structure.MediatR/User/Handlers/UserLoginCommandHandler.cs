@@ -69,11 +69,11 @@ namespace Structure.MediatR.Handlers
                 loginAudit.Status = LoginStatus.Success.ToString();
                 await _loginAuditRepository.LoginAudit(loginAudit);
                 var authUser = await _userRepository.BuildUserAuthObject(userInfo);
-                var onlineUser = new UserInfoToken
-                {
-                    Email = authUser.Email,
-                    Id = authUser.Id.ToString()
-                };
+                //var onlineUser = new UserInfoToken
+                //{
+                //    Email = authUser.Email,
+                //    Id = authUser.Id.ToString()
+                //};
                 //await _hubContext.Clients.All.Joined(onlineUser);
                 if (!string.IsNullOrWhiteSpace(authUser.ProfilePhoto))
                 {

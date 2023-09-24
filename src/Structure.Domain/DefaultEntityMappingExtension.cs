@@ -11,9 +11,9 @@ namespace Structure.Domain
                .Property(b => b.ModifiedDate)
                .HasDefaultValueSql("GETUTCDATE()");
 
-            //modelBuilder.Entity<Page>()
-            //    .Property(b => b.ModifiedDate)
-            //    .HasDefaultValueSql("GETUTCDATE()");
+            modelBuilder.Entity<Page>()
+                .Property(b => b.ModifiedDate)
+                .HasDefaultValueSql("GETUTCDATE()");
 
             modelBuilder.Entity<User>()
                 .Property(b => b.ModifiedDate)
@@ -76,8 +76,8 @@ namespace Structure.Domain
             modelBuilder.Entity<Data.Action>()
               .HasQueryFilter(p => !p.IsDeleted);
 
-            //modelBuilder.Entity<Page>()
-            // .HasQueryFilter(p => !p.IsDeleted);
+            modelBuilder.Entity<Page>()
+             .HasQueryFilter(p => !p.IsDeleted);
 
             //modelBuilder.Entity<EmailTemplate>()
             //    .HasQueryFilter(p => !p.IsDeleted);

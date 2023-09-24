@@ -1,8 +1,3 @@
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.csproj.AssemblyReference.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.GeneratedMSBuildEditorConfig.editorconfig
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.AssemblyInfoInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.AssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.csproj.CoreCompileInputs.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.pdb
@@ -10,6 +5,11 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bi
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Domain.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Data.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Domain.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.csproj.AssemblyReference.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.AssemblyInfoInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.AssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.csproj.CoreCompileInputs.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.csproj.CopyComplete
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\refint\Structure.Repository.dll

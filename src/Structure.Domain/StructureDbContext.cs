@@ -142,13 +142,13 @@ namespace Structure.Domain
             //      .OnDelete(DeleteBehavior.NoAction);
             //});
 
-            //builder.Entity<Data.Action>(b =>
-            //{
-            //    b.HasOne(e => e.CreatedByUser)
-            //        .WithMany()
-            //        .HasForeignKey(ur => ur.CreatedBy)
-            //        .OnDelete(DeleteBehavior.Restrict);
-            //});
+            builder.Entity<Data.Action>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
 
             //builder.Entity<Page>(b =>
             //{
