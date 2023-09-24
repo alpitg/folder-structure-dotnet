@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
-using Structure.Data;
 using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 
-namespace Structure.API.Helpers.Mapping
+namespace Structure.Api.Helpers.Mapping
 {
     /// <summary>
     /// Action Profiler

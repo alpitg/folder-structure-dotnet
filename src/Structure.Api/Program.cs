@@ -53,7 +53,7 @@ builder.Services.AddCors(options =>
                    .WithExposedHeaders("X-Pagination")
                    .AllowAnyHeader()
                    .AllowCredentials()
-                   .WithMethods("POST", "PUT", "PATCH", "GET", "DELETE")
+                   .WithMethods("StructureT", "PUT", "PATCH", "GET", "DELETE")
                    .SetIsOriginAllowed(host => true);
         });
 });
