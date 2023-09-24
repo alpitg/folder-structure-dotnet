@@ -10,7 +10,7 @@ namespace Structure.Api.Helpers.Mapping
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 //mc.AddProfile(new ActionProfile());
-                //mc.AddProfile(new PageProfile());
+                mc.AddProfile(new PageProfile());
                 mc.AddProfile(new RoleProfile());
                 mc.AddProfile(new UserProfile());
                 //mc.AddProfile(new NLogProfile());

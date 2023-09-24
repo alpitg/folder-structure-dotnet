@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Structure.Api.Helpers;
 using Structure.Api.Controllers;
 
-namespace Structure.API.Controllers
+namespace Structure.Api.Controllers
 {
     /// <summary>
     /// Role

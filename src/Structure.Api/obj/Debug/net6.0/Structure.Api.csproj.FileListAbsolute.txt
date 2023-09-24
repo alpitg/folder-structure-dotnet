@@ -1,3 +1,9 @@
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.AssemblyReference.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfoInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.CoreCompileInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.Development.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.exe
@@ -85,13 +91,6 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Data.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Domain.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Repository.pdb
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.AssemblyReference.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfoInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.CoreCompileInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.Structure.Api.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Structure.Api.props
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Structure.Api.props

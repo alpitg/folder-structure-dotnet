@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Structure.Api.Controllers;
 
-namespace Structure.API.Controllers
+namespace Structure.Api.Controllers
 {
     /// <summary>
     /// RoleUsers

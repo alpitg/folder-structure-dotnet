@@ -18,7 +18,7 @@ namespace Structure.Infrastructure.Extensions
             //    c.SwaggerDoc("v1", new OpenApiInfo
             //    {
             //        Version = "v1",
-            //        Title = "Structure API"
+            //        Title = "Structure Api"
             //    });
 
             //    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
