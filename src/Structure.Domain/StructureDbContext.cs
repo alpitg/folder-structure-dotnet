@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Structure.Data;
-using System;
+using System.Drawing;
+using System.Reflection.Emit;
 
 namespace Structure.Domain
 {
@@ -19,6 +20,7 @@ namespace Structure.Domain
         public override DbSet<RoleClaim> RoleClaims { get; set; }
         public override DbSet<UserToken> UserTokens { get; set; }
 
+        public DbSet<Tenant> Tenants { get; set; }
         public DbSet<Data.Action> Actions { get; set; }
         public DbSet<Page> Pages { get; set; }
         //public DbSet<NLog> NLog { get; set; }
@@ -75,13 +77,19 @@ namespace Structure.Domain
         {
             base.OnModelCreating(builder);
 
+            builder.Entity<Tenant>(b =>
+            {
+                b.Property(e => e.Name)
+                    .IsRequired();
+            });
+
             builder.Entity<User>(b =>
             {
                 // Each User can have many UserClaims
                 b.HasMany(e => e.UserClaims)
                     .WithOne(e => e.User)
                     .HasForeignKey(uc => uc.UserId)
-                    .IsRequired();
+                    .OnDelete(DeleteBehavior.NoAction);
 
                 // Each User can have many UserLogins
                 b.HasMany(e => e.UserLogins)
@@ -459,6 +467,7 @@ namespace Structure.Domain
             //        .IsRequired();
             //});
 
+            builder.Entity<Tenant>().ToTable("Tenants");
             builder.Entity<User>().ToTable("Users");
             builder.Entity<Role>().ToTable("Roles");
             builder.Entity<RoleClaim>().ToTable("RoleClaims");

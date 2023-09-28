@@ -67,6 +67,9 @@ namespace Structure.Domain
 
         public static void DefalutDeleteValueFilter(this ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Tenant>()
+            .HasQueryFilter(p => !p.IsDeleted);
+
             modelBuilder.Entity<User>()
             .HasQueryFilter(p => !p.IsDeleted);
 

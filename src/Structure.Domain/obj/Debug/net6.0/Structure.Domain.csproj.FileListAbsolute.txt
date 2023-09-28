@@ -13,3 +13,6 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\De
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\refint\Structure.Domain.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\ref\Structure.Domain.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Structure.Domain.runtimeconfig.json
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\obj\Debug\net6.0\Structure.Domain.genruntimeconfig.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Domain\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql

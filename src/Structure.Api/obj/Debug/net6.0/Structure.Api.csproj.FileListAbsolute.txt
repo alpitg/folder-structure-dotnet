@@ -105,3 +105,13 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.genruntimeconfig.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\ref\Structure.Api.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Humanizer.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.CodeDom.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Json.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql

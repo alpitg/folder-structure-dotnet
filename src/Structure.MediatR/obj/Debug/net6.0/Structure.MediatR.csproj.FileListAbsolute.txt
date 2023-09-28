@@ -19,3 +19,4 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\D
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\refint\Structure.MediatR.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\ref\Structure.MediatR.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
