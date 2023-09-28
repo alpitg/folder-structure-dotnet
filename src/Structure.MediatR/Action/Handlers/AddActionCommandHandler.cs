@@ -14,7 +14,7 @@ namespace Structure.MediatR.Handlers
     public class AddActionCommandHandler : IRequestHandler<AddActionCommand, ServiceResponse<ActionDto>>
     {
         private readonly IActionRepository _actionRepository;
-        private readonly IPageRepository _pageRepository;
+        private readonly IPageRepository _tenantRepository;
         private readonly IUnitOfWork<StructureDbContext> _uow;
         private readonly IMapper _mapper;
         private readonly ILogger<AddActionCommandHandler> _logger;
@@ -30,7 +30,7 @@ namespace Structure.MediatR.Handlers
             _mapper = mapper;
             _uow = uow;
             _logger = logger;
-            _pageRepository = pageRepository;
+            _tenantRepository = pageRepository;
         }
         public async Task<ServiceResponse<ActionDto>> Handle(AddActionCommand request, CancellationToken cancellationToken)
         {
@@ -41,7 +41,7 @@ namespace Structure.MediatR.Handlers
                 return ServiceResponse<ActionDto>.Return409("Action already exist.");
             }
 
-            var page = await _pageRepository.FindAsync(request.PageId);
+            var page = await _tenantRepository.FindAsync(request.PageId);
             if (page == null)
             {
                 _logger.LogError("Page does not exists.");

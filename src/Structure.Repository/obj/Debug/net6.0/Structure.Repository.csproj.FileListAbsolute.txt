@@ -1,3 +1,4 @@
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Structure.Repository.pdb
@@ -15,4 +16,3 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\ob
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\refint\Structure.Repository.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\Structure.Repository.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\obj\Debug\net6.0\ref\Structure.Repository.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Repository\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql

@@ -1,12 +1,7 @@
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.AssemblyReference.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfoInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.CoreCompileInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.Development.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.exe
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.runtimeconfig.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.dll
@@ -17,6 +12,7 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Azure.Identity.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\FluentValidation.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Humanizer.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\MediatR.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -27,6 +23,7 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -34,6 +31,7 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
@@ -53,11 +51,13 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.CodeDom.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -66,6 +66,8 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Json.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
@@ -78,6 +80,7 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Data.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Domain.dll
@@ -91,6 +94,13 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Data.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Domain.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Repository.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.AssemblyReference.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfoInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.AssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.csproj.CoreCompileInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.Structure.Api.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.Structure.Api.props
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Structure.Api.props
@@ -105,13 +115,3 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.genruntimeconfig.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\ref\Structure.Api.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Humanizer.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.CodeDom.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\System.Text.Json.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql

@@ -10,6 +10,7 @@ namespace Structure.Infrastructure.Extensions
         {
             services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
             services.AddScoped<IPropertyMappingService, PropertyMappingService>();
+            services.AddScoped<ITenantRepository, TenantRepository>();
             services.AddScoped<IPageRepository, PageRepository>();
             services.AddScoped<IActionRepository, ActionRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();

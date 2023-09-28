@@ -1,8 +1,4 @@
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.csproj.AssemblyReference.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.GeneratedMSBuildEditorConfig.editorconfig
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.AssemblyInfoInputs.cache
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.AssemblyInfo.cs
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.csproj.CoreCompileInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.MediatR.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.MediatR.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.MediatR.pdb
@@ -14,9 +10,13 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\D
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.Helper.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.Repository.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Structure.Domain.pdb
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.csproj.AssemblyReference.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.GeneratedMSBuildEditorConfig.editorconfig
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.AssemblyInfoInputs.cache
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.AssemblyInfo.cs
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.csproj.CoreCompileInputs.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.csproj.CopyComplete
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\refint\Structure.MediatR.dll
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\Structure.MediatR.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\obj\Debug\net6.0\ref\Structure.MediatR.dll
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.MediatR\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
