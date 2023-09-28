@@ -17,12 +17,12 @@ namespace Structure.MediatR.Handlers
         private readonly ITenantRepository _tenantRepository;
         private readonly IUnitOfWork<StructureDbContext> _uow;
         private readonly IMapper _mapper;
-        private readonly ILogger<AddPageCommandHandler> _logger;
+        private readonly ILogger<AddTenantCommandHandler> _logger;
         public AddTenantCommandHandler(
            ITenantRepository tenantRepository,
             IMapper mapper,
             IUnitOfWork<StructureDbContext> uow,
-            ILogger<AddPageCommandHandler> logger
+            ILogger<AddTenantCommandHandler> logger
             )
         {
             _tenantRepository = tenantRepository;
@@ -45,8 +45,7 @@ namespace Structure.MediatR.Handlers
             _tenantRepository.Add(entity);
             if (await _uow.SaveAsync() <= 0)
             {
-
-                _logger.LogError("Save Page have Error");
+                _logger.LogError("Save Tenant have Error");
                 return ServiceResponse<TenantDto>.Return500();
             }
             return ServiceResponse<TenantDto>.ReturnResultWith200(_mapper.Map<TenantDto>(entity));
