@@ -1,7 +1,6 @@
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.Development.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\appsettings.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.exe
-D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Migrations\20230928170045_initial_data.sql
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.deps.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.runtimeconfig.json
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Structure.Api.dll
@@ -115,3 +114,4 @@ D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.pdb
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\Structure.Api.genruntimeconfig.cache
 D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\obj\Debug\net6.0\ref\Structure.Api.dll
+D:\Professional\Office\Alpit\folder-structure-dotnet\src\Structure.Api\bin\Debug\net6.0\Migrations\20230929054107_initial_data.sql

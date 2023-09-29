@@ -7,6 +7,10 @@ namespace Structure.Domain
     {
         public static void DefalutMappingValue(this ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Tenant>()
+               .Property(b => b.ModifiedDate)
+               .HasDefaultValueSql("GETUTCDATE()");
+
             modelBuilder.Entity<Data.Action>()
                .Property(b => b.ModifiedDate)
                .HasDefaultValueSql("GETUTCDATE()");

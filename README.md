@@ -29,6 +29,10 @@ dotnet
 ### Migration class file to insert initial data
 
 ```c#
+// NOTE: When u create the .sql file, do this following changes for the file
+// Build Action - Embedded resource
+// Copy to output directory - Copy always
+
 using Microsoft.EntityFrameworkCore.Migrations;
 using System.Reflection;
 using System.Text.RegularExpressions;

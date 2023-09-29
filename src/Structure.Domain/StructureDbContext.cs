@@ -81,6 +81,11 @@ namespace Structure.Domain
             {
                 b.Property(e => e.Name)
                     .IsRequired();
+
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             builder.Entity<User>(b =>
@@ -89,7 +94,7 @@ namespace Structure.Domain
                 b.HasMany(e => e.UserClaims)
                     .WithOne(e => e.User)
                     .HasForeignKey(uc => uc.UserId)
-                    .OnDelete(DeleteBehavior.NoAction);
+                    .OnDelete(DeleteBehavior.Restrict);
 
                 // Each User can have many UserLogins
                 b.HasMany(e => e.UserLogins)

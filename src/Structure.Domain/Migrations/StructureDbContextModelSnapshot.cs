@@ -272,7 +272,9 @@ namespace Structure.Domain.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -280,8 +282,7 @@ namespace Structure.Domain.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CreatedBy")
-                        .IsUnique();
+                    b.HasIndex("CreatedBy");
 
                     b.ToTable("Tenants", (string)null);
                 });
@@ -395,6 +396,8 @@ namespace Structure.Domain.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("TenantId");
 
                     b.ToTable("Users", (string)null);
                 });
@@ -560,12 +563,21 @@ namespace Structure.Domain.Migrations
             modelBuilder.Entity("Structure.Data.Tenant", b =>
                 {
                     b.HasOne("Structure.Data.User", "CreatedByUser")
-                        .WithOne("Tenant")
-                        .HasForeignKey("Structure.Data.Tenant", "CreatedBy")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("CreatedByUser");
+                });
+
+            modelBuilder.Entity("Structure.Data.User", b =>
+                {
+                    b.HasOne("Structure.Data.Tenant", "Tenant")
+                        .WithMany()
+                        .HasForeignKey("TenantId");
+
+                    b.Navigation("Tenant");
                 });
 
             modelBuilder.Entity("Structure.Data.UserClaim", b =>
@@ -579,7 +591,7 @@ namespace Structure.Domain.Migrations
                     b.HasOne("Structure.Data.User", "User")
                         .WithMany("UserClaims")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Action");
@@ -642,8 +654,6 @@ namespace Structure.Domain.Migrations
 
             modelBuilder.Entity("Structure.Data.User", b =>
                 {
-                    b.Navigation("Tenant");
-
                     b.Navigation("UserClaims");
 
                     b.Navigation("UserLogins");
