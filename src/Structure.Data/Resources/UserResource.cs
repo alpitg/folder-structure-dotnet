@@ -6,6 +6,7 @@
         {
         }
 
+        public Guid? TenantId { get; set; }
         public string? Name { get; set; }
     }
 }

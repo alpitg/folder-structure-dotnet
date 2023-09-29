@@ -7,6 +7,7 @@ namespace Structure.MediatR.CommandAndQuery
     public class UpdateUserCommand : IRequest<ServiceResponse<UserDto>>
     {
         public Guid Id { get; set; }
+        public Guid? TenantId { get; set; }
         public string? Email { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }

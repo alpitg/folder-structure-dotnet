@@ -10,6 +10,8 @@ namespace Structure.Data.Dto
             BearerToken = string.Empty;
         }
         public Guid Id { get; set; }
+        public Guid? TenantId { get; set; }
+        public bool IsSuperAdmin { get; set; }
         public string UserName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

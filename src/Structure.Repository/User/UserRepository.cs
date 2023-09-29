@@ -42,17 +42,22 @@ namespace Structure.Repository
         public async Task<UserList> GetUsers(UserResource userResource)
         {
             var collectionBeforePaging = All;
+
+            if (userResource.TenantId.HasValue)
+            {
+                collectionBeforePaging = collectionBeforePaging.Where(c => c.TenantId == userResource.TenantId);
+            }
             collectionBeforePaging =
-               collectionBeforePaging.ApplySort(userResource.OrderBy,
-               _propertyMappingService.GetPropertyMapping<UserDto, User>());
+                collectionBeforePaging.ApplySort(userResource.OrderBy,
+                _propertyMappingService.GetPropertyMapping<UserDto, User>());
 
             if (!string.IsNullOrWhiteSpace(userResource.Name))
             {
                 collectionBeforePaging = collectionBeforePaging
-                    .Where(c => EF.Functions.Like(c.UserName, $"%{userResource.Name}%")
-                    || EF.Functions.Like(c.FirstName, $"%{userResource.Name}%")
-                    || EF.Functions.Like(c.LastName, $"%{userResource.Name}%")
-                    || EF.Functions.Like(c.PhoneNumber, $"%{userResource.Name}%"));
+             .Where(c => EF.Functions.Like(c.UserName, $"%{userResource.Name}%")
+             || EF.Functions.Like(c.FirstName, $"%{userResource.Name}%")
+             || EF.Functions.Like(c.LastName, $"%{userResource.Name}%")
+             || EF.Functions.Like(c.PhoneNumber, $"%{userResource.Name}%"));
             }
 
             var loginAudits = new UserList();
@@ -69,6 +74,8 @@ namespace Structure.Repository
             List<AppClaimDto> appClaims = new List<AppClaimDto>();
             // Set User Properties
             ret.Id = appUser.Id;
+            ret.TenantId = appUser.TenantId;
+            ret.IsSuperAdmin = appUser.IsSuperAdmin;
             ret.UserName = appUser.UserName;
             ret.FirstName = appUser.FirstName;
             ret.LastName = appUser.LastName;

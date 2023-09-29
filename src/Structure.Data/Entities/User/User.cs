@@ -5,6 +5,7 @@ namespace Structure.Data
 {
     public class User : IdentityUser<Guid>
     {
+        public Guid? TenantId { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public bool IsDeleted { get; set; }
@@ -13,7 +14,6 @@ namespace Structure.Data
         public string? Provider { get; set; }
         public string? Address { get; set; }
         public bool IsSuperAdmin { get; set; }
-        public Guid? TenantId { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
