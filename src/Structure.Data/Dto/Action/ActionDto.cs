@@ -4,6 +4,7 @@ namespace Structure.Data.Dto
     public class ActionDto
     {
         public Guid Id { get; set; }
+        public Guid? TenantId { get; set; }
         public string Name { get; set; }
         public Guid PageId { get; set; }
         public string Code { get; set; }

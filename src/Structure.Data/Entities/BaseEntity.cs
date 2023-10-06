@@ -32,6 +32,7 @@ namespace Structure.Data
         [NotMapped]
         public ObjectState ObjectState { get; set; }
         public bool IsDeleted { get; set; } = false;
+        public Guid? TenantId { get; set; }
 
     }
 }

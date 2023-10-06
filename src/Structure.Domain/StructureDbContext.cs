@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Structure.Data;
-using System.Drawing;
-using System.Reflection.Emit;
 
 namespace Structure.Domain
 {

@@ -5,6 +5,7 @@ namespace Structure.Data
 {
     public class Role : IdentityRole<Guid>
     {
+        public Guid? TenantId { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
