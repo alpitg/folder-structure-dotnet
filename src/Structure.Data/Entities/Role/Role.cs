@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Structure.Data
 {
-    public class Role : IdentityRole<Guid>
+    public class Role : IdentityRole<Guid>, IMustHaveTenant
     {
         public Guid? TenantId { get; set; }
         public bool IsDeleted { get; set; }

@@ -19,13 +19,19 @@ var configuration = new ConfigurationBuilder()
 
 var assembly = AppDomain.CurrentDomain.Load("Structure.MediatR");
 var defaultUserId = configuration.GetSection("DefaultUser").GetSection("DefaultUserId").Value;
+
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddValidatorsFromAssemblies(Enumerable.Repeat(assembly, 1));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton(new PathHelper(configuration));
 builder.Services.AddScoped(c => new UserInfoToken() { Id = defaultUserId });
-builder.Services.AddDbContextExt(configuration);
+builder.Services.AddDependencyInjectionExt();
+
+builder.Services.Configure<TenantSettings>(configuration.GetSection(nameof(TenantSettings)));
+builder.Services.AddAndMigrateTenantDatabases();
+
 builder.Services.AddIdentity<User, Role>()
             .AddEntityFrameworkStores<StructureDbContext>()
             .AddDefaultTokenProviders();
@@ -38,8 +44,8 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequireLowercase = false;
 });
 builder.Services.AddSingleton(MapperConfig.GetMapperConfigs());
-builder.Services.AddDependencyInjection();
 builder.Services.AddJwtExt(configuration);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy",
@@ -57,13 +63,13 @@ builder.Services.AddCors(options =>
                    .SetIsOriginAllowed(host => true);
         });
 });
+
 builder.Services.Configure<IISServerOptions>(options =>
 {
     options.AutomaticAuthentication = false;
 });
 builder.Services.AddControllers();
 builder.Services.AddSwaggerExt();
-
 
 
 var app = builder.Build();

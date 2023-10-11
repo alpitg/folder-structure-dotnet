@@ -1,9 +1,8 @@
-﻿
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace Structure.Data
 {
-    public class User : IdentityUser<Guid>
+    public class User : IdentityUser<Guid>, IMustHaveTenant
     {
         public Guid? TenantId { get; set; }
         public string? FirstName { get; set; }

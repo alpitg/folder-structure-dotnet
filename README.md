@@ -26,6 +26,12 @@ dotnet build
 dotnet
 ```
 
+### Migration - Update-Database
+
+```c#
+Update-Database -Connection "YOUR_CONNECTION_STRING"
+```
+
 ### Migration class file to insert initial data
 
 ```c#
