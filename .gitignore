@@ -97,7 +97,12 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
-[Oo]bj/
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 
 # Chutzpah Test files
 _Chutzpah*
