@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 using Structure.Repository.UnitOfWork;
+using Structure.Data;
 
 namespace Structure.MediatR.Handlers
 {
@@ -31,7 +32,7 @@ namespace Structure.MediatR.Handlers
         }
         public async Task<ServiceResponse<TenantDto>> Handle(UpdateTenantCommand request, CancellationToken cancellationToken)
         {
-            var entityExist = await _tenantRepository.FindBy(c => c.Name == request.Name && c.Id != request.Id)
+            var entityExist = await _tenantRepository.FindBy(c => c.Email == request.Email && c.Id != request.Id)
                 .FirstOrDefaultAsync();
             if (entityExist != null)
             {
@@ -39,6 +40,7 @@ namespace Structure.MediatR.Handlers
                 return ServiceResponse<TenantDto>.Return409("Tenant Name Already Exist.");
             }
             entityExist = await _tenantRepository.FindBy(v => v.Id == request.Id).FirstOrDefaultAsync();
+            entityExist.Email = request.Email;
             entityExist.Name = request.Name;
             _tenantRepository.Update(entityExist);
             if (await _uow.SaveAsync() <= 0)

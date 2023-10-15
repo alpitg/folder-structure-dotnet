@@ -32,6 +32,18 @@ dotnet
 Update-Database -Connection "YOUR_CONNECTION_STRING"
 ```
 
+
+### Migration - Mac commands
+
+```c#
+dotnet tool install --global dotnet-ef
+
+dotnet ef --startup-project ../Structure.Api  migrations add tenantUpdate
+
+dotnet ef --startup-project ../Structure.Api database update --connection "Server=localhost; Database=sharedTenantDb; User Id=SA; Password=Password123; Trusted_Connection=false;Encrypt=false;"
+```
+
+
 ### Migration class file to insert initial data
 
 ```c#

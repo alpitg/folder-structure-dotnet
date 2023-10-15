@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj": {}
+    "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/Structure.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+    "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
+        "projectUniqueName": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj",
         "projectName": "Structure.Data",
-        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
-        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
-        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\obj\\",
+        "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj",
+        "packagesPath": "/Users/alpitg/.nuget/packages/",
+        "outputPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alpitg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,36 +64,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj": {
+    "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/Structure.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj",
+        "projectUniqueName": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/Structure.Domain.csproj",
         "projectName": "Structure.Domain",
-        "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\Structure.Domain.csproj",
-        "packagesPath": "C:\\Users\\alpit\\.nuget\\packages\\",
-        "outputPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Domain\\obj\\",
+        "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/Structure.Domain.csproj",
+        "packagesPath": "/Users/alpitg/.nuget/packages/",
+        "outputPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alpit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alpitg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
-                "projectPath": "D:\\Professional\\Office\\Alpit\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj"
+              "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj": {
+                "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj"
               }
             }
           }
@@ -136,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     }
