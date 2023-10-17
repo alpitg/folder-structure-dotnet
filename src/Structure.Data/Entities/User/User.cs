@@ -13,6 +13,7 @@ namespace Structure.Data
         public string? Provider { get; set; }
         public string? Address { get; set; }
         public bool IsSuperAdmin { get; set; }
+        public bool ShouldChangePasswordOnNextLogin { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public DateTime ModifiedDate { get; set; }

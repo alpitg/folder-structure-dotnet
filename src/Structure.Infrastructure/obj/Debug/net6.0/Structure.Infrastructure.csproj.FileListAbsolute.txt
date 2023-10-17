@@ -18,7 +18,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Infrastructur
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Infrastructure/obj/Debug/net6.0/Structure.Infrastructure.pdb
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Infrastructure/obj/Debug/net6.0/ref/Structure.Infrastructure.dll
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Infrastructure/bin/Debug/net6.0/Migrations/20230929054107_initial_data.sql
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/bin/Debug/net6.0/Migrations/20230929054107_initial_data.sql
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/bin/Debug/net6.0/Structure.Infrastructure.deps.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/bin/Debug/net6.0/Structure.Infrastructure.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/bin/Debug/net6.0/Structure.Infrastructure.pdb

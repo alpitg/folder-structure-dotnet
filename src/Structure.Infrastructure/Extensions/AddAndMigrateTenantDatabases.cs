@@ -14,7 +14,7 @@ namespace Structure.Infrastructure.Extensions
             var options = services.GetOptions<TenantSettings>(nameof(TenantSettings));
             var defaultConnectionString = options.Defaults?.ConnectionString;
             var defaultDbProvider = options.Defaults?.DBProvider;
-            if (defaultDbProvider.ToLower() == "mssql")
+            if (defaultDbProvider.ToLower() == "sql")
             {
                 services.AddDbContext<StructureDbContext>(options =>
                 {

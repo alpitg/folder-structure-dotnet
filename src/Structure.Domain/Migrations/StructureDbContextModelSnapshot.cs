@@ -258,9 +258,12 @@ namespace Structure.Domain.Migrations
 
             modelBuilder.Entity("Structure.Data.Tenant", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConnectionString")
                         .HasColumnType("nvarchar(max)");
@@ -277,10 +280,16 @@ namespace Structure.Domain.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("Edition")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsInTrialPeriod")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("ModifiedBy")
@@ -293,6 +302,12 @@ namespace Structure.Domain.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("SubscriptionEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TenancyName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("TenantId")
@@ -394,6 +409,9 @@ namespace Structure.Domain.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("ShouldChangePasswordOnNextLogin")
+                        .HasColumnType("bit");
 
                     b.Property<Guid?>("TenantId")
                         .HasColumnType("uniqueidentifier");

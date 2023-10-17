@@ -58,6 +58,7 @@ namespace Structure.MediatR.Handlers
             appUser.PhoneNumber = request.PhoneNumber;
             appUser.Address = request.Address;
             appUser.IsActive = request.IsActive;
+            appUser.ShouldChangePasswordOnNextLogin = request.ShouldChangePasswordOnNextLogin;
             appUser.ModifiedDate = DateTime.UtcNow;
             appUser.ModifiedBy = Guid.Parse(_userInfoToken.Id);
 

@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
 
 namespace Structure.MediatR.Handlers
 {
@@ -32,21 +31,38 @@ namespace Structure.MediatR.Handlers
         }
         public async Task<ServiceResponse<TenantDto>> Handle(UpdateTenantCommand request, CancellationToken cancellationToken)
         {
-            var entityExist = await _tenantRepository.FindBy(c => c.Email == request.Email && c.Id != request.Id)
+            var entityExist = await _tenantRepository.FindBy(c => c.TenancyName == request.TenancyName && c.Id != request.Id)
                 .FirstOrDefaultAsync();
             if (entityExist != null)
             {
                 _logger.LogError("Tenant Name Already Exist.");
                 return ServiceResponse<TenantDto>.Return409("Tenant Name Already Exist.");
             }
+
             entityExist = await _tenantRepository.FindBy(v => v.Id == request.Id).FirstOrDefaultAsync();
-            entityExist.Email = request.Email;
-            entityExist.Name = request.Name;
-            _tenantRepository.Update(entityExist);
-            if (await _uow.SaveAsync() <= 0)
+
+            if (entityExist != null)
             {
-                return ServiceResponse<TenantDto>.Return500();
+                entityExist.TenancyName = request.TenancyName;
+                entityExist.Name = request.Name;
+                entityExist.ConnectionString = request.ConnectionString;
+                entityExist.Edition = request.Edition;
+                entityExist.Address = request.Address;
+                entityExist.SubscriptionEndDate = request.SubscriptionEndDate;
+                entityExist.IsInTrialPeriod = request.IsInTrialPeriod;
+                entityExist.IsActive = request.IsActive;
+
+                _tenantRepository.Update(entityExist);
+                if (await _uow.SaveAsync() <= 0)
+                {
+                    return ServiceResponse<TenantDto>.Return500();
+                }
+            } else
+            {
+                _logger.LogError("Failed to update Tenant.");
+                return ServiceResponse<TenantDto>.Return409("Failed to update Tenant.");
             }
+            
             return ServiceResponse<TenantDto>.ReturnResultWith200(_mapper.Map<TenantDto>(entityExist));
         }
     }
