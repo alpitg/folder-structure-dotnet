@@ -14,9 +14,10 @@ namespace Structure.MediatR.CommandAndQuery
         public string? Password { get; set; }
         public string? PhoneNumber { get; set; }
         public bool IsActive { get; set; }
-        public string Address { get; set; }
+        public bool ShouldChangePasswordOnNextLogin { get; set; }
+        public string? Address { get; set; }
         public bool IsImageUpdate { get; set; }
-        public string ImgSrc { get; set; }
+        public string? ImgSrc { get; set; }
         public List<UserRoleDto> UserRoles { get; set; } = new List<UserRoleDto>();
 
     }

@@ -118,7 +118,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.Development.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Migrations/20230929054107_initial_data.sql
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api.deps.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api.runtimeconfig.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api.dll

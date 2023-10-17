@@ -34,12 +34,12 @@ Update-Database -Connection "YOUR_CONNECTION_STRING"
 
 
 ### Migration - Mac commands
+- NOTE: Check SQL section to clean db before applying clean migration
 
 ```c#
 dotnet tool install --global dotnet-ef
 
-dotnet ef --startup-project ../Structure.Api  migrations add tenantUpdate
-
+dotnet ef --startup-project ../Structure.Api  migrations add initial 
 dotnet ef --startup-project ../Structure.Api database update --connection "Server=localhost; Database=sharedTenantDb; User Id=SA; Password=Password123; Trusted_Connection=false;Encrypt=false;"
 ```
 
@@ -88,4 +88,8 @@ namespace Structure.Domain.Migrations
 ```sql
 INSERT [dbo].[Users] ([Id], [FirstName]) VALUES (N'1a5cf5b9-ead8-495c-8719-2d8be776f452', N'Amit');
 GO
+
+-- DROP database
+alter database [sharedTenantDb] set single_user with rollback immediate
+drop database [sharedTenantDb]
 ```
