@@ -137,7 +137,7 @@ namespace Structure.Domain
             if (!string.IsNullOrEmpty(tenantConnectionString))
             {
                 var DBProvider = _tenantService.GetDatabaseProvider();
-                if (DBProvider.ToLower() == "mssql")
+                if (DBProvider.ToLower() == "sql")
                 {
                     optionsBuilder.UseSqlServer(_tenantService.GetConnectionString());
                 }
