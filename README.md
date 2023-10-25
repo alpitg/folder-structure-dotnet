@@ -90,6 +90,7 @@ INSERT [dbo].[Users] ([Id], [FirstName]) VALUES (N'1a5cf5b9-ead8-495c-8719-2d8be
 GO
 
 -- DROP database
+use master
 alter database [sharedTenantDb] set single_user with rollback immediate
 drop database [sharedTenantDb]
 ```
