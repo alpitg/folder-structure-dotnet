@@ -61,27 +61,26 @@ namespace Structure.MediatR.Handlers
 
             #region Add Admin User & tenant
 
-            UserDto userRequest = new UserDto()
-            {
-
-                UserName = request.TenancyName,
-                Email = request.Email,
-                FirstName = request.Name,
-                LastName = "",
-                PhoneNumber = "",
-                IsActive = request.IsActive,
-                ShouldChangePasswordOnNextLogin = request.ShouldChangePasswordOnNextLogin,
-                Address = request.Address ?? "",
-
-                TenantId = entity.Id,
-                UserRoles = new List<UserRoleDto>()
-                {
-                   new UserRoleDto{ UserId = null, RoleId = new Guid("f8b6ace9-a625-4397-bdf8-f34060dbd8e4")}
-                }
-            };
-
             try
             {
+                UserDto userRequest = new UserDto()
+                {
+                    UserName = request.TenancyName,
+                    Email = request.Email,
+                    FirstName = request.TenancyName,
+                    LastName = request.TenancyName,
+                    PhoneNumber = request.ContactNumber,
+                    IsActive = request.IsActive,
+                    ShouldChangePasswordOnNextLogin = request.ShouldChangePasswordOnNextLogin,
+                    Address = request.Address ?? "",
+                    TenantId = entity.Id,
+                    Tenant = entity,
+                    UserRoles = new List<UserRoleDto>()
+                    {
+                       new UserRoleDto{ UserId = null, RoleId = new Guid("f8b6ace9-a625-4397-bdf8-f34060dbd8e4")}
+                    }
+                };
+
                 var appUser = await _userManager.FindByNameAsync(request.Email);
                 if (appUser != null)
                 {
@@ -91,12 +90,7 @@ namespace Structure.MediatR.Handlers
                 request.Password = CommonUtil.GenerateRandomPassword();
 
                 var userEntity = _mapper.Map<User>(userRequest);
-                userEntity.Tenant = entity;
-                userEntity.TenantId = entity.Id;
-                userEntity.FirstName = request.TenancyName;
-                userEntity.LastName = request.TenancyName;
-                userEntity.PhoneNumber = request.ContactNumber;
-                userEntity.Address = request.Address;
+
                 userEntity.IsActive = request.IsActive;
                 userEntity.CreatedBy = Guid.Parse(_userInfoToken.Id);
                 userEntity.ModifiedBy = Guid.Parse(_userInfoToken.Id);
@@ -110,7 +104,7 @@ namespace Structure.MediatR.Handlers
                 userEntity.TenantId = entity.Id;
 
                 var response = await _userManager.FindByEmailAsync(userEntity.Email);
-                if(response != null)
+                if (response != null)
                 {
                     response.TenantId = entity.Id;
                 }
