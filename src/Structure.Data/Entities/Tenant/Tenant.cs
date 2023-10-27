@@ -13,5 +13,7 @@ namespace Structure.Data
         public DateTime? SubscriptionEndDate { get; set; }
         public bool IsInTrialPeriod { get; set; }
         public bool IsActive { get; set; }
+
+        public virtual ICollection<User>? Users { get; set; }
     }
 }
