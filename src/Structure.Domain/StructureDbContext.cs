@@ -147,7 +147,8 @@ namespace Structure.Domain
                 {
                     case EntityState.Added:
                     case EntityState.Modified:
-                        entry.Entity.TenantId = TenantId;
+                        if (TenantId.HasValue)
+                            entry.Entity.TenantId = TenantId;
                         break;
                 }
             }
