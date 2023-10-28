@@ -2,19 +2,18 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Structure.Data;
-using Structure.Data.Services;
 
 namespace Structure.Domain
 {
     public class StructureDbContext : IdentityDbContext<User, Role, Guid, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         public Guid? TenantId { get; set; }
-        private readonly ITenantService _tenantService;
+        private readonly ITenantProvider _tenantProvider;
 
-        public StructureDbContext(DbContextOptions options, ITenantService tenantService) : base(options)
+        public StructureDbContext(DbContextOptions options, ITenantProvider tenantProvider) : base(options)
         {
-            _tenantService = tenantService;
-            TenantId = _tenantService.GetTenant()?.Id;
+            _tenantProvider = tenantProvider;
+            TenantId = _tenantProvider.GetTenant()?.Id;
         }
         public override DbSet<User> Users { get; set; }
         public override DbSet<Role> Roles { get; set; }
@@ -123,18 +122,17 @@ namespace Structure.Domain
 
             builder.DefaultMappingValue();
             builder.DefaultDeleteFilter();
-            builder.DefaultTenantFilter(TenantId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var tenantConnectionString = _tenantService.GetConnectionString();
+            var tenantConnectionString = _tenantProvider.GetConnectionString();
             if (!string.IsNullOrEmpty(tenantConnectionString))
             {
-                var DBProvider = _tenantService.GetDatabaseProvider();
+                var DBProvider = _tenantProvider.GetDatabaseProvider();
                 if (DBProvider.ToLower() == "sql")
                 {
-                    optionsBuilder.UseSqlServer(_tenantService.GetConnectionString());
+                    optionsBuilder.UseSqlServer(_tenantProvider.GetConnectionString());
                 }
             }
         }

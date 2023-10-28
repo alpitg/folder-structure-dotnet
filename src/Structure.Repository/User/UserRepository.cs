@@ -43,10 +43,10 @@ namespace Structure.Repository
         {
             var collectionBeforePaging = All;
 
-            if (userResource.TenantId.HasValue)
-            {
-                collectionBeforePaging = collectionBeforePaging.Where(c => c.TenantId == userResource.TenantId);
-            }
+            //if (userResource.TenantId.HasValue)
+            //{
+            //    collectionBeforePaging = collectionBeforePaging.Where(c => c.TenantId == userResource.TenantId);
+            //}
             collectionBeforePaging =
                 collectionBeforePaging.ApplySort(userResource.OrderBy,
                 _propertyMappingService.GetPropertyMapping<UserDto, User>());

@@ -1,7 +1,7 @@
 ﻿
-namespace Structure.Data.Services
+namespace Structure.Data
 {
-    public interface ITenantService
+    public interface ITenantProvider
     {
         public string GetDatabaseProvider();
         public string GetConnectionString();

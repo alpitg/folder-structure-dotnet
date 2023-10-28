@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.22" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="TenantProvider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TenantProvider\" />
+  </ItemGroup>
 </Project>

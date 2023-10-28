@@ -41,6 +41,7 @@ namespace Structure.Api.Controllers
         /// </summary>
         /// <returns>Test</returns>
         /// <response code="200">Returns the newly created item</response>
+        [AllowAnonymous]
         [HttpGet]
         [Produces("application/json", "application/xml", Type = typeof(List<TenantDto>))]
         public async Task<IActionResult> GetTenants()

@@ -42,12 +42,5 @@ namespace Structure.Domain
             modelBuilder.Entity<Page>().HasQueryFilter(p => !p.IsDeleted);
 
         }
-
-        public static void DefaultTenantFilter(this ModelBuilder modelBuilder, Guid? tenantId)
-        {
-            modelBuilder.Entity<User>().HasQueryFilter(a => a.TenantId == tenantId);
-
-            modelBuilder.Entity<Role>().HasQueryFilter(a => a.TenantId == tenantId);
-        }
     }
 }

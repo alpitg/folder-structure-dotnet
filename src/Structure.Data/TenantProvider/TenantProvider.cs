@@ -2,15 +2,15 @@
 using Microsoft.AspNetCore.Http;
 using Structure.Data.Dto;
 
-namespace Structure.Data.Services
+namespace Structure.Data
 {
-    public class TenantService : ITenantService
+    public class TenantProvider : ITenantProvider
     {
         private readonly TenantSettings _tenantSettings = new TenantSettings();
         private HttpContext _httpContext;
         private Tenant _currentTenant;
 
-        public TenantService(IOptions<TenantSettings> tenantSettings, IHttpContextAccessor contextAccessor)
+        public TenantProvider(IOptions<TenantSettings> tenantSettings, IHttpContextAccessor contextAccessor)
         {
             _tenantSettings = tenantSettings.Value;
             _httpContext = contextAccessor.HttpContext;
