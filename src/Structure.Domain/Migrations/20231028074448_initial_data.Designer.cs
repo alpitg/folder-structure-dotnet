@@ -12,8 +12,8 @@ using Structure.Domain;
 namespace Structure.Domain.Migrations
 {
     [DbContext(typeof(StructureDbContext))]
-    [Migration("20231017221116_initial")]
-    partial class initial
+    [Migration("20231028074448_initial_data")]
+    partial class initial_data
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -277,12 +277,6 @@ namespace Structure.Domain.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Edition")
                         .HasColumnType("nvarchar(max)");
 
@@ -313,12 +307,7 @@ namespace Structure.Domain.Migrations
                     b.Property<string>("TenancyName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("CreatedBy");
 
                     b.ToTable("Tenants", (string)null);
                 });
@@ -599,21 +588,10 @@ namespace Structure.Domain.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("Structure.Data.Tenant", b =>
-                {
-                    b.HasOne("Structure.Data.User", "CreatedByUser")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("CreatedByUser");
-                });
-
             modelBuilder.Entity("Structure.Data.User", b =>
                 {
                     b.HasOne("Structure.Data.Tenant", "Tenant")
-                        .WithMany()
+                        .WithMany("Users")
                         .HasForeignKey("TenantId");
 
                     b.Navigation("Tenant");
@@ -689,6 +667,11 @@ namespace Structure.Domain.Migrations
                     b.Navigation("RoleClaims");
 
                     b.Navigation("UserRoles");
+                });
+
+            modelBuilder.Entity("Structure.Data.Tenant", b =>
+                {
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("Structure.Data.User", b =>

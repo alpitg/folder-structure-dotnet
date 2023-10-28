@@ -1,8 +1,10 @@
 ﻿
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Structure.Data
 {
 
-    public class Tenant : BaseEntity
+    public class Tenant
     {
         public Guid? Id { get; set; }
         public string? TenancyName { get; set; }
@@ -13,6 +15,21 @@ namespace Structure.Data
         public DateTime? SubscriptionEndDate { get; set; }
         public bool IsInTrialPeriod { get; set; }
         public bool IsActive { get; set; }
+        private DateTime _modifiedDate;
+        public DateTime ModifiedDate
+        {
+            get => _modifiedDate;
+            set => _modifiedDate = value;
+        }
+        public Guid ModifiedBy { get; set; }
+        private DateTime _createdDate;
+        public DateTime CreatedDate
+        {
+            get => _createdDate;
+            set => _createdDate = value;
+        }
+        public Guid CreatedBy { get; set; }
+        public bool IsDeleted { get; set; } = false;
 
         public virtual ICollection<User>? Users { get; set; }
     }

@@ -39,11 +39,6 @@ namespace Structure.Domain
             {
                 b.Property(e => e.Name)
                     .IsRequired();
-
-                b.HasOne(e => e.CreatedByUser)
-                    .WithMany()
-                    .HasForeignKey(ur => ur.CreatedBy)
-                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             builder.Entity<User>(b =>

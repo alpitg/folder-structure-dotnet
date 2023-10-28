@@ -41,3 +41,4 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.MediatR/bin/D
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/obj/Debug/net6.0/refint/Structure.MediatR.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/obj/Debug/net6.0/Structure.MediatR.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/obj/Debug/net6.0/ref/Structure.MediatR.dll
+/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Migrations/20231028074448_initial_data.sql

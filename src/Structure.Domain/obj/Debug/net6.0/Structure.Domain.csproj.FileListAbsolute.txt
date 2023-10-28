@@ -33,3 +33,4 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Domain/bin/De
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.genruntimeconfig.cache
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/obj/Debug/net6.0/ref/Structure.Domain.dll
+/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Domain/bin/Debug/net6.0/Migrations/20231028074448_initial_data.sql
