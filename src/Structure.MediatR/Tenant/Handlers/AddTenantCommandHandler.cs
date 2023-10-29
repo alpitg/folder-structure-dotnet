@@ -101,17 +101,7 @@ namespace Structure.MediatR.Handlers
 
                 IdentityResult result = await _userManager.CreateAsync(userEntity);
 
-                userEntity.TenantId = entity.Id;
-
-                var response = await _userManager.FindByEmailAsync(userEntity.Email);
-                if (response != null)
-                {
-                    response.TenantId = entity.Id;
-                }
-
-                IdentityResult resultUpdate = await _userManager.UpdateAsync(userEntity);
-
-                if (!result.Succeeded || !resultUpdate.Succeeded)
+                if (!result.Succeeded)
                 {
                     return ServiceResponse<TenantDto>.Return500();
                 }

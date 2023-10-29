@@ -6,6 +6,11 @@ namespace Structure.Data
 
     public class Tenant
     {
+        public Tenant()
+        {
+            Users = new List<User>();
+        }
+
         public Guid? Id { get; set; }
         public string? TenancyName { get; set; }
         public string? Name { get; set; }
@@ -31,6 +36,6 @@ namespace Structure.Data
         public Guid CreatedBy { get; set; }
         public bool IsDeleted { get; set; } = false;
 
-        public virtual ICollection<User>? Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }
