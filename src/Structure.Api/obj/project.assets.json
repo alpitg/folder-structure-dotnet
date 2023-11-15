@@ -4546,40 +4546,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/alpitg/.nuget/packages/": {}
+    "C:\\Users\\conne\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/Structure.Api.csproj",
+      "projectUniqueName": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Api\\Structure.Api.csproj",
       "projectName": "Structure.Api",
-      "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/Structure.Api.csproj",
-      "packagesPath": "/Users/alpitg/.nuget/packages/",
-      "outputPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/obj/",
+      "projectPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Api\\Structure.Api.csproj",
+      "packagesPath": "C:\\Users\\conne\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alpitg/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\conne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
-        "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Helper/Structure.Helper.csproj": {
-              "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Helper/Structure.Helper.csproj"
+            "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj": {
+              "projectPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Helper\\Structure.Helper.csproj"
             },
-            "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/Structure.Infrastructure.csproj": {
-              "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Infrastructure/Structure.Infrastructure.csproj"
+            "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Infrastructure\\Structure.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Infrastructure\\Structure.Infrastructure.csproj"
             },
-            "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/Structure.MediatR.csproj": {
-              "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/Structure.MediatR.csproj"
+            "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj": {
+              "projectPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.MediatR\\Structure.MediatR.csproj"
             }
           }
         }
@@ -4628,7 +4628,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

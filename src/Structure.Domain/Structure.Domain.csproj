@@ -17,11 +17,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Structure.Data\Structure.Data.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Migrations\20231017221126_initial_data.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\20231017221126_initial_data.sql" />
-  </ItemGroup>
 </Project>

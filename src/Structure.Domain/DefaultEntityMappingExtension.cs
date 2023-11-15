@@ -27,6 +27,25 @@ namespace Structure.Domain
                 .Property(b => b.ModifiedDate)
                 .HasDefaultValueSql("GETUTCDATE()");
 
+            modelBuilder.Entity<Facility>()
+              .Property(b => b.ModifiedDate)
+              .HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Entity<FacilityType>()
+              .Property(b => b.ModifiedDate)
+              .HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Entity<FacilitiesCourts>()
+             .Property(b => b.ModifiedDate)
+             .HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Entity<FacilitiesCalender>()
+             .Property(b => b.ModifiedDate)
+             .HasDefaultValueSql("GETUTCDATE()");
+
+            modelBuilder.Entity<FacilityBookFrequency>()
+             .Property(b => b.ModifiedDate)
+             .HasDefaultValueSql("GETUTCDATE()");
         }
 
         public static void DefaultDeleteFilter(this ModelBuilder modelBuilder)
@@ -40,6 +59,7 @@ namespace Structure.Domain
             modelBuilder.Entity<Data.Action>().HasQueryFilter(p => !p.IsDeleted);
 
             modelBuilder.Entity<Page>().HasQueryFilter(p => !p.IsDeleted);
+
 
         }
 

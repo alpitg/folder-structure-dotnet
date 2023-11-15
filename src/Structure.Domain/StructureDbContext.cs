@@ -24,10 +24,17 @@ namespace Structure.Domain
         public override DbSet<RoleClaim> RoleClaims { get; set; }
         public override DbSet<UserToken> UserTokens { get; set; }
 
+
         public DbSet<Tenant> Tenants { get; set; }
         public DbSet<Data.Action> Actions { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<LoginAudit> LoginAudits { get; set; }
+        public DbSet<Facility> Facilities { get; set; }
+        public DbSet<FacilityType> FacilityType { get; set; }
+        public DbSet<FacilityBookFrequency> FacilityBookFrequency { get; set; }
+        public DbSet<FacilitiesCourts> FacilitiesCourts { get; set; }
+        public DbSet<FacilitiesCalender> FacilitiesCalenders { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -112,6 +119,47 @@ namespace Structure.Domain
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
+            builder.Entity<Facility>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            builder.Entity<FacilityType>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            builder.Entity<FacilitiesCourts>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            builder.Entity<FacilitiesCalender>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+            builder.Entity<FacilityBookFrequency>(b =>
+            {
+                b.HasOne(e => e.CreatedByUser)
+                    .WithMany()
+                    .HasForeignKey(ur => ur.CreatedBy)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+
+
             #endregion
 
             #region Table names
@@ -124,9 +172,15 @@ namespace Structure.Domain
             builder.Entity<UserLogin>().ToTable("UserLogins");
             builder.Entity<UserRole>().ToTable("UserRoles");
             builder.Entity<UserToken>().ToTable("UserTokens");
-            #endregion
+            builder.Entity<Facility>().ToTable("Facilities");
+            builder.Entity<FacilityType>().ToTable("FacilityTypes");
+            builder.Entity<FacilityBookFrequency>().ToTable("FacilityBookFrequencies");
+            builder.Entity<FacilitiesCourts>().ToTable("FacilitiesCourts");
+            builder.Entity<FacilitiesCalender>().ToTable("FacilitiesCalenders");
 
-            builder.DefaultMappingValue();
+        #endregion
+
+        builder.DefaultMappingValue();
             builder.DefaultDeleteFilter();
             builder.DefaultTenantFilter(TenantId);
         }

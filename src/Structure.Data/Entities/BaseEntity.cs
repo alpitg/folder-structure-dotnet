@@ -34,5 +34,6 @@ namespace Structure.Data
         public bool IsDeleted { get; set; } = false;
         public Guid? TenantId { get; set; }
 
+
     }
 }

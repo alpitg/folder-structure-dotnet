@@ -53,6 +53,118 @@ namespace Structure.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Facilities",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsHavingMultipleCourts = table.Column<bool>(type: "bit", nullable: true),
+                    FacilityTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
+                    ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    TenantId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Facilities", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FacilitiesCalenders",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Year = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HolidayDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    WeeklyOffDays = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
+                    ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    TenantId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FacilitiesCalenders", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FacilitiesCourts",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CourtName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CourtNumber = table.Column<int>(type: "int", nullable: false),
+                    FacilitiesId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CourtFees = table.Column<float>(type: "real", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
+                    ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    TenantId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FacilitiesCourts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_FacilitiesCourts_Facilities_FacilitiesId",
+                        column: x => x.FacilitiesId,
+                        principalTable: "Facilities",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FacilityBookFrequencies",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
+                    ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    TenantId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FacilityBookFrequencies", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FacilityTypes",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
+                    ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    TenantId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FacilityTypes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Pages",
                 columns: table => new
                 {
@@ -294,6 +406,41 @@ namespace Structure.Domain.Migrations
                 column: "PageId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Facilities_CreatedBy",
+                table: "Facilities",
+                column: "CreatedBy");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Facilities_FacilityTypeId",
+                table: "Facilities",
+                column: "FacilityTypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FacilitiesCalenders_CreatedBy",
+                table: "FacilitiesCalenders",
+                column: "CreatedBy");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FacilitiesCourts_CreatedBy",
+                table: "FacilitiesCourts",
+                column: "CreatedBy");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FacilitiesCourts_FacilitiesId",
+                table: "FacilitiesCourts",
+                column: "FacilitiesId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FacilityBookFrequencies_CreatedBy",
+                table: "FacilityBookFrequencies",
+                column: "CreatedBy");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FacilityTypes_CreatedBy",
+                table: "FacilityTypes",
+                column: "CreatedBy");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Pages_CreatedBy",
                 table: "Pages",
                 column: "CreatedBy");
@@ -389,6 +536,53 @@ namespace Structure.Domain.Migrations
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
+                name: "FK_Facilities_FacilityTypes_FacilityTypeId",
+                table: "Facilities",
+                column: "FacilityTypeId",
+                principalTable: "FacilityTypes",
+                principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Facilities_Users_CreatedBy",
+                table: "Facilities",
+                column: "CreatedBy",
+                principalTable: "Users",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_FacilitiesCalenders_Users_CreatedBy",
+                table: "FacilitiesCalenders",
+                column: "CreatedBy",
+                principalTable: "Users",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_FacilitiesCourts_Users_CreatedBy",
+                table: "FacilitiesCourts",
+                column: "CreatedBy",
+                principalTable: "Users",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_FacilityBookFrequencies_Users_CreatedBy",
+                table: "FacilityBookFrequencies",
+                column: "CreatedBy",
+                principalTable: "Users",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_FacilityTypes_Users_CreatedBy",
+                table: "FacilityTypes",
+                column: "CreatedBy",
+                principalTable: "Users",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.AddForeignKey(
                 name: "FK_Pages_Users_CreatedBy",
                 table: "Pages",
                 column: "CreatedBy",
@@ -445,6 +639,15 @@ namespace Structure.Domain.Migrations
                 table: "Tenants");
 
             migrationBuilder.DropTable(
+                name: "FacilitiesCalenders");
+
+            migrationBuilder.DropTable(
+                name: "FacilitiesCourts");
+
+            migrationBuilder.DropTable(
+                name: "FacilityBookFrequencies");
+
+            migrationBuilder.DropTable(
                 name: "LoginAudits");
 
             migrationBuilder.DropTable(
@@ -463,10 +666,16 @@ namespace Structure.Domain.Migrations
                 name: "UserTokens");
 
             migrationBuilder.DropTable(
+                name: "Facilities");
+
+            migrationBuilder.DropTable(
                 name: "Actions");
 
             migrationBuilder.DropTable(
                 name: "Roles");
+
+            migrationBuilder.DropTable(
+                name: "FacilityTypes");
 
             migrationBuilder.DropTable(
                 name: "Pages");

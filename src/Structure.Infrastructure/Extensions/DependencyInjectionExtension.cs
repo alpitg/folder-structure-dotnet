@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.Extensions.DependencyInjection;
 using Structure.Data.Services;
 using Structure.Repository;
 using Structure.Repository.UnitOfWork;
@@ -21,6 +22,12 @@ namespace Structure.Infrastructure.Extensions
             services.AddScoped<IUserClaimRepository, UserClaimRepository>();
             services.AddScoped<IRoleClaimRepository, RoleClaimRepository>();
             services.AddScoped<ILoginAuditRepository, LoginAuditRepository>();
+            services.AddScoped<IFacilityCourtRepository, FacilityCourtRepository>();
+            services.AddScoped<IFacilityRepository, FacilityRepository>();
+            services.AddScoped<IFacilityTypeRepository, FacilityTypeRepository>();
+
+
+
 
         }
     }

@@ -29,7 +29,7 @@ dotnet
 ### Migration - Update-Database
 
 ```c#
-Update-Database -Connection "YOUR_CONNECTION_STRING"
+Update-Database -Connection "Server=MSI;Database=sharedTenantDb;user=sa;password=password123;Trusted_Connection=false;Encrypt=false;"
 ```
 
 
