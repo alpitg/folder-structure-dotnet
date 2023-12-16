@@ -33,7 +33,7 @@ builder.Services.AddDbContextExt(configuration);
 //builder.Services.AddAndMigrateTenantDatabases();
 
 builder.Services.AddIdentity<User, Role>()
-            .AddUserStore<StructureDbContext>()
+            .AddEntityFrameworkStores<StructureDbContext>()
             .AddDefaultTokenProviders();
 builder.Services.Configure<IdentityOptions>(options =>
 {

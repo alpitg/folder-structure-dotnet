@@ -43,8 +43,11 @@ public partial class StructureDbContext : DbContext
     {
         modelBuilder.Entity<UserRole>(entity =>
         {
-            entity.HasNoKey();
+            // entity.HasNoKey();
+            entity.HasOne(d => d.Role).WithMany(p => p.UserRoles).HasForeignKey(d => d.RoleId);
+            entity.HasOne(d => d.User).WithMany(p => p.UserRoles).HasForeignKey(d => d.UserId);
         });
+
         modelBuilder.Entity<Action>(entity =>
         {
             entity.HasIndex(e => e.CreatedBy, "IX_Actions_CreatedBy");
@@ -83,6 +86,12 @@ public partial class StructureDbContext : DbContext
 
         modelBuilder.Entity<Role>(entity =>
         {
+            // Each Role can have many entries in the UserRole join table
+            entity.HasMany(e => e.UserRoles)
+                .WithOne(e => e.Role)
+                .HasForeignKey(ur => ur.RoleId)
+                .IsRequired();
+
             entity.HasIndex(e => e.CreatedBy, "IX_Roles_CreatedBy");
 
             entity.HasIndex(e => e.DeletedBy, "IX_Roles_DeletedBy");
@@ -127,6 +136,12 @@ public partial class StructureDbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
+            // Each User can have many entries in the UserRole join table
+            entity.HasMany(e => e.UserRoles)
+                .WithOne(e => e.User)
+                .HasForeignKey(ur => ur.UserId)
+                .IsRequired();
+
             entity.HasIndex(e => e.NormalizedEmail, "EmailIndex");
 
             entity.HasIndex(e => e.TenantId, "IX_Users_TenantId");

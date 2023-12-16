@@ -14,7 +14,7 @@ namespace Structure.Infrastructure.Extensions
             //var connectionString = configuration.GetValue<string>("connectionStrings:DbConnectionString");
             var connectionString = defaultValue["ConnectionString"];
 
-            services.AddDbContextPool<StructureDbContext>(options =>
+            services.AddDbContext<StructureDbContext>(options =>
             {
                 options.UseSqlServer(connectionString)
                 .EnableSensitiveDataLogging();

@@ -1,7 +1,9 @@
 ﻿
+using Microsoft.AspNetCore.Identity;
+
 namespace Structure.Domain.Entities;
 
-public partial class Role
+public partial class Role: IdentityRole
 {
     public Guid Id { get; set; }
 

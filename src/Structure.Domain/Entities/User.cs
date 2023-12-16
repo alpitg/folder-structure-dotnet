@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
 namespace Structure.Domain.Entities;
 
-public partial class User
+public partial class User: IdentityUser
 {
     public Guid Id { get; set; }
 
