@@ -12,18 +12,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Structure.Data\Structure.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Migrations\20231028074448_initial_data.sql" />
+    <None Remove="TenantProvider\" />
+    <None Remove="Dto\" />
+    <None Remove="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\20231028074448_initial_data.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <Folder Include="TenantProvider\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

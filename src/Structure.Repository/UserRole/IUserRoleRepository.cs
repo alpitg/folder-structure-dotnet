@@ -1,5 +1,5 @@
-﻿using Structure.Repository.GenericRepository;
-using Structure.Data;
+﻿using Structure.Domain.Entities;
+using Structure.Repository.GenericRepository;
 
 namespace Structure.Repository
 {

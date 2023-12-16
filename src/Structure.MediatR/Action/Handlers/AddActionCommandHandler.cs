@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
@@ -8,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 using Structure.Repository.UnitOfWork;
+using Structure.Domain.Entities;
 
 namespace Structure.MediatR.Handlers
 {
@@ -47,7 +47,7 @@ namespace Structure.MediatR.Handlers
                 _logger.LogError("Page does not exists.");
                 return ServiceResponse<ActionDto>.Return404("Page does not exists.");
             }
-            var entity = _mapper.Map<Data.Action>(request);
+            var entity = _mapper.Map<Domain.Entities.Action>(request);
             entity.Id = Guid.NewGuid();
             entity.Code = $"{page.Name.Replace(" ", "_")}_{entity.Name.Replace(" ", "_")}".ToUpper();
             _actionRepository.Add(entity);

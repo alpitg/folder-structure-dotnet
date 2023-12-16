@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
@@ -8,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 using Structure.Repository.UnitOfWork;
+using Structure.Domain.Entities;
 
 namespace Structure.MediatR.Handlers
 {

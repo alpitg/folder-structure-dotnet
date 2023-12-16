@@ -2,10 +2,9 @@
 using Microsoft.Extensions.Logging;
 using Structure.Repository.GenericRepository;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
 using Structure.Data.Resources;
-using Structure.Domain;
 
 namespace Structure.Repository
 {
@@ -58,7 +57,7 @@ namespace Structure.Repository
                     Provider = loginAudit.Provider,
                     Status = loginAudit.Status,
                     UserName = loginAudit.UserName,
-                    RemoteIP = loginAudit.RemoteIP,
+                    RemoteIp = loginAudit.RemoteIp,
                     Latitude = loginAudit.Latitude,
                     Longitude = loginAudit.Longitude
                 });

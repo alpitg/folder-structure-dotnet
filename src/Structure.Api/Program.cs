@@ -6,8 +6,7 @@ using Structure.Data.Dto;
 using Structure.Helper;
 using Structure.Api.Helpers.Mapping;
 using Microsoft.AspNetCore.Identity;
-using Structure.Data;
-using Structure.Domain;
+using Structure.Domain.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder()
@@ -30,10 +29,11 @@ builder.Services.AddScoped(c => new UserInfoToken() { Id = defaultUserId });
 builder.Services.AddDependencyInjectionExt();
 
 builder.Services.Configure<TenantSettings>(configuration.GetSection(nameof(TenantSettings)));
-builder.Services.AddAndMigrateTenantDatabases();
+builder.Services.AddDbContextExt(configuration);
+//builder.Services.AddAndMigrateTenantDatabases();
 
 builder.Services.AddIdentity<User, Role>()
-            .AddEntityFrameworkStores<StructureDbContext>()
+            .AddUserStore<StructureDbContext>()
             .AddDefaultTokenProviders();
 builder.Services.Configure<IdentityOptions>(options =>
 {

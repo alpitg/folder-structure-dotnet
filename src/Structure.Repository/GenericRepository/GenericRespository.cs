@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain;
 
 namespace Structure.Repository.GenericRepository
 {

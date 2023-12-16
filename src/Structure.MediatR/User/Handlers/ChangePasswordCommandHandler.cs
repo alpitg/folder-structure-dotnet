@@ -1,4 +1,4 @@
-﻿using Structure.Data;
+﻿using Structure.Domain.Entities;
 using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 using MediatR;

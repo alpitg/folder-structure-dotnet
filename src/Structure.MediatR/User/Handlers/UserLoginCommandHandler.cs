@@ -1,4 +1,4 @@
-﻿using Structure.Data;
+﻿using Structure.Domain.Entities;
 using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
@@ -39,7 +39,7 @@ namespace Structure.MediatR.Handlers
             var loginAudit = new LoginAuditDto
             {
                 UserName = request.UserName,
-                RemoteIP = request.RemoteIp,
+                RemoteIp = request.RemoteIp,
                 Status = LoginStatus.Error.ToString(),
                 Latitude = request.Latitude,
                 Longitude = request.Longitude

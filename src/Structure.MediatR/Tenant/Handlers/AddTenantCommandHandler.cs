@@ -2,16 +2,12 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.Helper;
 using Structure.MediatR.CommandAndQuery;
-using Structure.Repository.UnitOfWork;
 using Structure.Repository;
 using Microsoft.EntityFrameworkCore;
-using Structure.Data;
-using System.Drawing;
+using Structure.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Hosting;
 
 namespace Structure.MediatR.Handlers
 {

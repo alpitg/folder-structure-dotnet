@@ -1,6 +1,6 @@
 ﻿using Structure.Repository.GenericRepository;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Domain;
 
 namespace Structure.Repository

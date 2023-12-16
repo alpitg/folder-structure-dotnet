@@ -10,15 +10,8 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Data/obj/Debu
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/refint/Structure.Data.dll
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.pdb
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/ref/Structure.Data.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/bin/Debug/net6.0/Structure.Data.deps.json
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/bin/Debug/net6.0/Structure.Data.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/bin/Debug/net6.0/Structure.Data.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.csproj.AssemblyReference.cache
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.GeneratedMSBuildEditorConfig.editorconfig
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.AssemblyInfoInputs.cache
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.AssemblyInfo.cs
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.csproj.CoreCompileInputs.cache
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/refint/Structure.Data.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/Structure.Data.pdb
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/Debug/net6.0/ref/Structure.Data.dll

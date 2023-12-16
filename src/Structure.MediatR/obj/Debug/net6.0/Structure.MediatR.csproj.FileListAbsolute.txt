@@ -20,15 +20,12 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.MediatR/obj/D
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.MediatR/obj/Debug/net6.0/Structure.MediatR.pdb
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.MediatR/obj/Debug/net6.0/ref/Structure.MediatR.dll
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Migrations/20230929054107_initial_data.sql
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Migrations/20231028074448_initial_data.sql
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.MediatR.deps.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.MediatR.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.MediatR.pdb
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Data.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Domain.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Helper.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Repository.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Data.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Helper.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Repository.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.MediatR/bin/Debug/net6.0/Structure.Domain.pdb

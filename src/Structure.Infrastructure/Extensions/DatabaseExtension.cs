@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Structure.Domain;
+using Structure.Domain.Entities;
 
 namespace Structure.Infrastructure.Extensions
 {
@@ -10,12 +10,13 @@ namespace Structure.Infrastructure.Extensions
     {
         public static void AddDbContextExt(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DbConnectionString");
+            var defaultValue = configuration.GetSection("TenantSettings:Defaults");
             //var connectionString = configuration.GetValue<string>("connectionStrings:DbConnectionString");
+            var connectionString = defaultValue["ConnectionString"];
 
             services.AddDbContextPool<StructureDbContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("DbConnectionString"))
+                options.UseSqlServer(connectionString)
                 .EnableSensitiveDataLogging();
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
                 options.ConfigureWarnings(builder =>

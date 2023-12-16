@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Structure.Helper;
+using Structure.Data;
 
 namespace Structure.MediatR.Handlers
 {

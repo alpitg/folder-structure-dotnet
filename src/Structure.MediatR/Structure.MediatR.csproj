@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Structure.Data\Structure.Data.csproj" />
     <ProjectReference Include="..\Structure.Helper\Structure.Helper.csproj" />
     <ProjectReference Include="..\Structure.Repository\Structure.Repository.csproj" />
   </ItemGroup>

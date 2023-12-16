@@ -1,4 +1,4 @@
-﻿using Structure.Data;
+﻿using Structure.Domain.Entities;
 using Structure.Domain;
 using Structure.Repository.GenericRepository;
 using Structure.Repository.UnitOfWork;

@@ -1,5 +1,4 @@
-﻿using Structure.Data;
-using Structure.Domain;
+﻿using Structure.Domain.Entities;
 using Structure.Repository.GenericRepository;
 using Structure.Repository.UnitOfWork;
 

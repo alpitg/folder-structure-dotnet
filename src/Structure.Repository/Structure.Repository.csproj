@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Structure.Data\Structure.Data.csproj" />
     <ProjectReference Include="..\Structure.Domain\Structure.Domain.csproj" />
   </ItemGroup>
 

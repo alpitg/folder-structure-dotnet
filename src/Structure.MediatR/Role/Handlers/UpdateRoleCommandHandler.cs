@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
 using Structure.Repository.UnitOfWork;

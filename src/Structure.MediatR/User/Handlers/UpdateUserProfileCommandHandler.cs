@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
 using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;

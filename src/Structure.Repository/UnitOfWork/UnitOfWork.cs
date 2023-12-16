@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
+using Structure.Domain;
 
 namespace Structure.Repository.UnitOfWork
 {

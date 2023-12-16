@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
 
 namespace Structure.Repository

@@ -1,14 +1,14 @@
 ﻿using Structure.Repository.GenericRepository;
 using Structure.Repository.UnitOfWork;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
-using Structure.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Structure.Data.Resources;
+using Structure.Data;
 
 namespace Structure.Repository
 {

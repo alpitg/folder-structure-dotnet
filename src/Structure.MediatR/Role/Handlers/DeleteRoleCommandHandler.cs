@@ -1,16 +1,12 @@
 ﻿using Structure.Data.Dto;
 using Structure.MediatR.CommandAndQuery;
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 using Structure.Repository;
-using System;
-using Structure.Domain;
 using Structure.Repository.UnitOfWork;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Structure.Domain.Entities;
 
 namespace Structure.MediatR.Handlers
 {

@@ -14,9 +14,9 @@ namespace Structure.Api.Helpers.Mapping
         /// </summary>
         public ActionProfile()
         {
-            CreateMap<Data.Action, ActionDto>().ReverseMap();
-            CreateMap<AddActionCommand, Data.Action>();
-            CreateMap<UpdateActionCommand, Data.Action>();
+            CreateMap<Domain.Entities.Action, ActionDto>().ReverseMap();
+            CreateMap<AddActionCommand, Domain.Entities.Action>();
+            CreateMap<UpdateActionCommand, Domain.Entities.Action>();
         }
     }
 }

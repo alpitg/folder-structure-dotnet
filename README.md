@@ -102,6 +102,20 @@ alter database [sharedTenantDb] set single_user with rollback immediate
 drop database [sharedTenantDb]
 ```
 
+### database first
+
+```
+dotnet ef dbcontext scaffold "Server=localhost; Database=sharedTenantDb; User Id=SA; Password=Password123; Trusted_Connection=false;Encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -o Entities -c StructureDbContext;
+
+```
+
+
+
+
+
+
+
+
 
 ### reference for Email confirmation
 ```c#
@@ -160,4 +174,23 @@ public async Task<IActionResult> Register(string userName, string password)
 
             return BadRequest(message);
         }
+```
+
+
+
+```
+using Structure.Domain.Entities;
+
+namespace Structure.Data
+{
+    public class UserRole 
+    {
+        public Guid UserId { get; set; }
+        public Guid RoleId { get; set; }
+
+        public virtual User? User { get; set; }
+        public virtual Role? Role { get; set; }
+    }
+}
+
 ```

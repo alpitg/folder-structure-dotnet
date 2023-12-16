@@ -115,7 +115,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/obj/Debug
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/Structure.Api.genruntimeconfig.cache
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/ref/Structure.Api.dll
 D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Migrations/20230929054107_initial_data.sql
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Migrations/20231028074448_initial_data.sql
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.Development.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api
@@ -133,9 +132,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/MediatR.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/MediatR.Contracts.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
@@ -151,8 +147,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Hosting.Abstractions.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
@@ -199,7 +193,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Data.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Domain.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Helper.dll
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Infrastructure.dll
@@ -208,7 +201,6 @@ D:/Professional/Office/Alpit/folder-structure-dotnet/src/Structure.Api/bin/Debug
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Helper.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Infrastructure.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.MediatR.pdb
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Data.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Domain.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Repository.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/Structure.Api.csproj.AssemblyReference.cache

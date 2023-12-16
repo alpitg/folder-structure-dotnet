@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Structure.Data.Dto;
-using Structure.Domain;
+using Structure.Domain.Entities;
 
 namespace Structure.Infrastructure.Extensions
 {

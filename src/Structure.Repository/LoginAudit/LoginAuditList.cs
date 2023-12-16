@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Structure.Data;
+using Structure.Domain.Entities;
 using Structure.Data.Dto;
 
 namespace Structure.Repository
@@ -52,7 +48,7 @@ namespace Structure.Repository
                     Id = c.Id,
                     LoginTime = c.LoginTime,
                     Provider = c.Provider,
-                    RemoteIP = c.RemoteIP,
+                    RemoteIp = c.RemoteIp,
                     Status = c.Status,
                     UserName = c.UserName,
                     Latitude = c.Latitude,

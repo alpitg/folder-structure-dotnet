@@ -1,10 +1,10 @@
 ﻿using Structure.Data.Dto;
-using Structure.Domain;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
 using Structure.Helper;
 using Structure.Repository.UnitOfWork;
+using Structure.Domain.Entities;
 
 namespace Structure.MediatR.Handlers
 {

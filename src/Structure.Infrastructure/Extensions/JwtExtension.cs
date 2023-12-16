@@ -2,10 +2,10 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using Structure.Data;
 using Structure.Data.Dto;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using Structure.Data;
 
 namespace Structure.Infrastructure.Extensions
 {

@@ -1,5 +1,5 @@
 ﻿using Structure.Data.Dto;
-using Structure.Domain;
+using Structure.Domain.Entities;
 using Structure.MediatR.CommandAndQuery;
 using Structure.Repository;
 using MediatR;
