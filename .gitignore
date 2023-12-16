@@ -367,3 +367,24 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+src/Structure.Api/obj/project.assets.json
+src/Structure.Api/obj/Structure.Api.csproj.nuget.dgspec.json
+src/Structure.Api/obj/Structure.Api.csproj.nuget.g.props
+src/Structure.Data/obj/project.assets.json
+src/Structure.Data/obj/Structure.Data.csproj.nuget.dgspec.json
+src/Structure.Data/obj/Structure.Data.csproj.nuget.g.props
+src/Structure.Domain/obj/project.assets.json
+src/Structure.Domain/obj/Structure.Domain.csproj.nuget.dgspec.json
+src/Structure.Domain/obj/Structure.Domain.csproj.nuget.g.props
+src/Structure.Helper/obj/project.assets.json
+src/Structure.Helper/obj/Structure.Helper.csproj.nuget.dgspec.json
+src/Structure.Helper/obj/Structure.Helper.csproj.nuget.g.props
+src/Structure.Infrastructure/obj/project.assets.json
+src/Structure.Infrastructure/obj/Structure.Infrastructure.csproj.nuget.dgspec.json
+src/Structure.Infrastructure/obj/Structure.Infrastructure.csproj.nuget.g.props
+src/Structure.MediatR/obj/project.assets.json
+src/Structure.MediatR/obj/Structure.MediatR.csproj.nuget.dgspec.json
+src/Structure.MediatR/obj/Structure.MediatR.csproj.nuget.g.props
+src/Structure.Repository/obj/project.assets.json
+src/Structure.Repository/obj/Structure.Repository.csproj.nuget.dgspec.json
+src/Structure.Repository/obj/Structure.Repository.csproj.nuget.g.props
