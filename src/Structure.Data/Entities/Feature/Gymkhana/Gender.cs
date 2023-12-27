@@ -1,23 +1,11 @@
 ﻿using System;
 namespace Structure.Data.Entities.Feature.Gymkhana
 {
-	public class ReservationFees
+	public class Gender
 	{
-		public ReservationFees()
-		{
-			Facility = new Facility();
-		}
-
-		public Guid? Id { get; set; }
-        public Guid? FacilityId { get; set; }
-        public Facility? Facility { get; set; }
-        public bool? IsAc { get; set; }
-		public int? Daily { get; set; }
-		public int? Monthly { get; set; }
-		public int? Yearly { get; set; }
-		public string? DailyDisclaimer { get; set; }
-		public string? MonthlyDisclaimer { get; set; }
-		public string? YearlyDisclaimer { get; set; }
+        public Guid? Id { get; set; }
+        public string? Name { get; set; }
+        public string? DisplayName { get; set; }
 
         private DateTime _modifiedDate;
         public DateTime ModifiedDate
