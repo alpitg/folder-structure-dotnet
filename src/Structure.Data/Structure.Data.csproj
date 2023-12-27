@@ -13,8 +13,12 @@
 
   <ItemGroup>
     <None Remove="TenantProvider\" />
+    <None Remove="Entities\Feature\" />
+    <None Remove="Entities\Feature\Gymkhana\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TenantProvider\" />
+    <Folder Include="Entities\Feature\" />
+    <Folder Include="Entities\Feature\Gymkhana\" />
   </ItemGroup>
 </Project>
