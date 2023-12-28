@@ -24,6 +24,7 @@ namespace Structure.Infrastructure.Extensions
 
             services.AddScoped<IFacilityRepository, FacilityRepository>();
             services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<IHolidayCalendarRepository, HolidayCalendarRepository>();
 
         }
     }

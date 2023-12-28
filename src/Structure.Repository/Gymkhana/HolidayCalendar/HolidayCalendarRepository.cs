@@ -5,10 +5,10 @@ using Structure.Repository.UnitOfWork;
 
 namespace Structure.Repository
 {
-    public class FacilityRepository : GenericRepository<Facility, StructureDbContext>,
-          IFacilityRepository
+    public class HolidayCalendarRepository : GenericRepository<HolidayCalendar, StructureDbContext>,
+          IHolidayCalendarRepository
     {
-        public FacilityRepository(
+        public HolidayCalendarRepository(
             IUnitOfWork<StructureDbContext> uow
             ) : base(uow)
         {
