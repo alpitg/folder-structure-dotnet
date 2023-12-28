@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Structure.Data
+namespace Structure.Data.Dto
 {
-	public class Gender : BaseEntity
+	public class GenderDto
     {
         public Guid? Id { get; set; }
         public string? Name { get; set; }

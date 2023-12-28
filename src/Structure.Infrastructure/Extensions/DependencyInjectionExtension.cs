@@ -22,6 +22,8 @@ namespace Structure.Infrastructure.Extensions
             services.AddScoped<IRoleClaimRepository, RoleClaimRepository>();
             services.AddScoped<ILoginAuditRepository, LoginAuditRepository>();
 
+            services.AddScoped<IFacilityRepository, FacilityRepository>();
+
         }
     }
 }

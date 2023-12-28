@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Structure.Domain;
 
@@ -11,9 +12,11 @@ using Structure.Domain;
 namespace Structure.Domain.Migrations
 {
     [DbContext(typeof(StructureDbContext))]
-    partial class StructureDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231227162822_gymkhanaInit")]
+    partial class gymkhanaInit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

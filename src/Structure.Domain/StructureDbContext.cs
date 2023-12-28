@@ -28,6 +28,22 @@ namespace Structure.Domain
         public DbSet<Page> Pages { get; set; }
         public DbSet<LoginAudit> LoginAudits { get; set; }
 
+
+        #region GYMKHANA
+
+        public DbSet<Facility> Facility { get; set; }
+        public DbSet<Gender> Gender { get; set; }
+        public DbSet<HolidayCalendar> HolidayCalendar { get; set; }
+        public DbSet<TimeSlots> TimeSlots { get; set; }
+        public DbSet<ReservationFees> ReservationFees { get; set; }
+        public DbSet<ScheduledSlots> ScheduledSlots { get; set; }
+        public DbSet<ScheduledTransaction> ScheduledTransaction { get; set; }
+
+
+        #endregion
+
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -106,6 +122,9 @@ namespace Structure.Domain
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
+
+            builder.DefaultModelBuilderGymkhana();
+
             #endregion
 
             #region Table names
@@ -118,6 +137,18 @@ namespace Structure.Domain
             builder.Entity<UserLogin>().ToTable("UserLogins");
             builder.Entity<UserRole>().ToTable("UserRoles");
             builder.Entity<UserToken>().ToTable("UserTokens");
+
+            #region GYMKHANA
+            builder.Entity<Facility>().ToTable("Facilities");
+            builder.Entity<Gender>().ToTable("Genders");
+            builder.Entity<HolidayCalendar>().ToTable("HolidayCalendars");
+            builder.Entity<TimeSlots>().ToTable("TimeSlots");
+            builder.Entity<ReservationFees>().ToTable("ReservationFees");
+            builder.Entity<ScheduledSlots>().ToTable("ScheduledSlots");
+            builder.Entity<ScheduledTransaction>().ToTable("ScheduledTransaction");
+            #endregion
+
+
             #endregion
 
             builder.DefaultMappingValue();

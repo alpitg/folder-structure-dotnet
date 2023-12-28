@@ -9,7 +9,7 @@ namespace Structure.Api.Controllers
     /// <summary>
     /// Page
     /// </summary>
-    [Route("api")]
+    [Route("api/[controller]")]
     [ApiController]
     [Authorize]
     [ApiExplorerSettings(IgnoreApi = true)]

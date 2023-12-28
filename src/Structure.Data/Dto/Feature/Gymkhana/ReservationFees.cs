@@ -1,16 +1,16 @@
 ﻿using System;
-namespace Structure.Data
+namespace Structure.Data.Dto
 {
-	public class ReservationFees : BaseEntity
+	public class ReservationFeesDto
     {
-		public ReservationFees()
+		public ReservationFeesDto()
 		{
-			Facility = new Facility();
+			Facility = new FacilityDto();
 		}
 
 		public Guid? Id { get; set; }
         public Guid? FacilityId { get; set; }
-        public Facility? Facility { get; set; }
+        public FacilityDto? Facility { get; set; }
         public bool? IsAc { get; set; }
 		public int? Daily { get; set; }
 		public string? DailyDisclaimer { get; set; }
