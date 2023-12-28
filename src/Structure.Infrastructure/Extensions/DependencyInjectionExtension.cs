@@ -23,6 +23,7 @@ namespace Structure.Infrastructure.Extensions
             services.AddScoped<ILoginAuditRepository, LoginAuditRepository>();
 
             services.AddScoped<IFacilityRepository, FacilityRepository>();
+            services.AddScoped<IGenderRepository, GenderRepository>();
 
         }
     }

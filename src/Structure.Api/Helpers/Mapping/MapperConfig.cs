@@ -17,6 +17,7 @@ namespace Structure.Api.Helpers.Mapping
 
                 // GYMKHANA
                 mc.AddProfile(new FacilityProfile());
+                mc.AddProfile(new GenderProfile());
                 
             });
             return mappingConfig.CreateMapper();

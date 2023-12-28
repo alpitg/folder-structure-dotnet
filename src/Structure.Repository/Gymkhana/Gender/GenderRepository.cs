@@ -5,10 +5,10 @@ using Structure.Repository.UnitOfWork;
 
 namespace Structure.Repository
 {
-    public class GenderRepository : GenericRepository<Gender, StructureDbContext>,
-          IGenderRepository
+    public class FacilityRepository : GenericRepository<Facility, StructureDbContext>,
+          IFacilityRepository
     {
-        public GenderRepository(
+        public FacilityRepository(
             IUnitOfWork<StructureDbContext> uow
             ) : base(uow)
         {

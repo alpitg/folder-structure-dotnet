@@ -29,7 +29,7 @@ namespace Structure.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("Facility/{id}", Name = "GetFacility")]
+        [HttpGet("{id}", Name = "GetFacility")]
         [Produces("application/json", "application/xml", Type = typeof(FacilityDto))]
         public async Task<IActionResult> GetFacility(Guid id)
         {
@@ -42,7 +42,7 @@ namespace Structure.Api.Controllers
         /// </summary>
         /// <returns>Test</returns>
         /// <response code="200">Returns the newly created item</response>
-        [HttpGet("Facilities")]
+        [HttpGet("")]
         [Produces("application/json", "application/xml", Type = typeof(List<FacilityDto>))]
         public async Task<IActionResult> GetFacilities()
         {
@@ -55,7 +55,7 @@ namespace Structure.Api.Controllers
         /// </summary>
         /// <param name="addFacilityCommand"></param>
         /// <returns></returns>
-        [HttpPost("Facility")]
+        [HttpPost("")]
         [Produces("application/json", "application/xml", Type = typeof(FacilityDto))]
         public async Task<IActionResult> AddFacility(AddFacilityCommand addFacilityCommand)
         {
@@ -72,7 +72,7 @@ namespace Structure.Api.Controllers
         /// <param name="Id"></param>
         /// <param name="updateFacilityCommand"></param>
         /// <returns></returns>
-        [HttpPut("Facility/{Id}")]
+        [HttpPut("{Id}")]
         [Produces("application/json", "application/xml", Type = typeof(FacilityDto))]
         public async Task<IActionResult> UpdateFacility(Guid Id, UpdateFacilityCommand updateFacilityCommand)
         {
@@ -85,7 +85,7 @@ namespace Structure.Api.Controllers
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        [HttpDelete("Facility/{Id}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> DeleteFacility(Guid Id)
         {
             var deleteFacilityCommand = new DeleteFacilityCommand { Id = Id };
