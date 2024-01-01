@@ -22,6 +22,7 @@ namespace Structure.Infrastructure.Extensions
             services.AddScoped<IRoleClaimRepository, RoleClaimRepository>();
             services.AddScoped<ILoginAuditRepository, LoginAuditRepository>();
 
+            // GYMKHANA
             services.AddScoped<IFacilityRepository, FacilityRepository>();
             services.AddScoped<IGenderRepository, GenderRepository>();
             services.AddScoped<IHolidayCalendarRepository, HolidayCalendarRepository>();
