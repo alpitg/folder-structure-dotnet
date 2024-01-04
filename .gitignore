@@ -388,3 +388,7 @@ src/Structure.MediatR/obj/Structure.MediatR.csproj.nuget.g.props
 src/Structure.Repository/obj/project.assets.json
 src/Structure.Repository/obj/Structure.Repository.csproj.nuget.dgspec.json
 src/Structure.Repository/obj/Structure.Repository.csproj.nuget.g.props
+src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.csproj.FileListAbsolute.txt
+src/Structure.Infrastructure/obj/Debug/net6.0/Structure.Infrastructure.csproj.FileListAbsolute.txt
+src/Structure.MediatR/obj/Debug/net6.0/Structure.MediatR.csproj.FileListAbsolute.txt
+src/Structure.Repository/obj/Debug/net6.0/Structure.Repository.csproj.FileListAbsolute.txt

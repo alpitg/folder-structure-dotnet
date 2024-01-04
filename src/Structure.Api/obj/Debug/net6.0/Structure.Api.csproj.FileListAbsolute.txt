@@ -1,4 +1,3 @@
-/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Migrations/20231028074448_initial_data.sql
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.Development.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/appsettings.json
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Structure.Api
@@ -115,3 +114,4 @@
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/Structure.Api.pdb
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/Structure.Api.genruntimeconfig.cache
 /Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/obj/Debug/net6.0/ref/Structure.Api.dll
+/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Api/bin/Debug/net6.0/Migrations/20240104195050_initial_data.sql

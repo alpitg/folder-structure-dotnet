@@ -12,8 +12,8 @@ using Structure.Domain;
 namespace Structure.Domain.Migrations
 {
     [DbContext(typeof(StructureDbContext))]
-    [Migration("20231214134622_init")]
-    partial class init
+    [Migration("20240104193753_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,165 +80,6 @@ namespace Structure.Domain.Migrations
                     b.ToTable("Actions");
                 });
 
-            modelBuilder.Entity("Structure.Data.BookSlots", b =>
-                {
-                    b.Property<Guid?>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<double?>("Cost")
-                        .HasColumnType("float");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Date")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("FacilityCourtId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("FacilityId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid>("ModifiedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<string>("Slot")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedBy");
-
-                    b.HasIndex("FacilityCourtId");
-
-                    b.HasIndex("FacilityId");
-
-                    b.ToTable("BookSlots", (string)null);
-                });
-
-            modelBuilder.Entity("Structure.Data.FacilitiesCalender", b =>
-                {
-                    b.Property<Guid?>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("HolidayDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid>("ModifiedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("WeeklyOffDays")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Year")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedBy");
-
-                    b.ToTable("FacilitiesCalenders", (string)null);
-                });
-
-            modelBuilder.Entity("Structure.Data.FacilitiesCourts", b =>
-                {
-                    b.Property<Guid?>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<float>("CourtFees")
-                        .HasColumnType("real");
-
-                    b.Property<string>("CourtName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CourtNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("FacilitiesId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid>("ModifiedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<Guid?>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedBy");
-
-                    b.HasIndex("FacilitiesId");
-
-                    b.ToTable("FacilitiesCourts", (string)null);
-                });
-
             modelBuilder.Entity("Structure.Data.Facility", b =>
                 {
                     b.Property<Guid?>("Id")
@@ -257,13 +98,10 @@ namespace Structure.Domain.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("FacilityTypeId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("FacilityName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsHavingMultipleCourts")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("ModifiedBy")
@@ -274,22 +112,17 @@ namespace Structure.Domain.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETUTCDATE()");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<Guid?>("TenantId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CreatedBy");
-
-                    b.HasIndex("FacilityTypeId");
 
                     b.ToTable("Facilities", (string)null);
                 });
 
-            modelBuilder.Entity("Structure.Data.FacilityBookFrequency", b =>
+            modelBuilder.Entity("Structure.Data.FacilityTypes", b =>
                 {
                     b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
@@ -328,10 +161,10 @@ namespace Structure.Domain.Migrations
 
                     b.HasIndex("CreatedBy");
 
-                    b.ToTable("FacilityBookFrequencies", (string)null);
+                    b.ToTable("FacilityTypes");
                 });
 
-            modelBuilder.Entity("Structure.Data.FacilityType", b =>
+            modelBuilder.Entity("Structure.Data.Gender", b =>
                 {
                     b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
@@ -348,6 +181,9 @@ namespace Structure.Domain.Migrations
 
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -370,7 +206,61 @@ namespace Structure.Domain.Migrations
 
                     b.HasIndex("CreatedBy");
 
-                    b.ToTable("FacilityTypes", (string)null);
+                    b.ToTable("Genders", (string)null);
+                });
+
+            modelBuilder.Entity("Structure.Data.HolidayCalendar", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EndTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EventDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EventName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsForAllDay")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<DateTime?>("StartTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("TenantId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.ToTable("HolidayCalendars", (string)null);
                 });
 
             modelBuilder.Entity("Structure.Data.LoginAudit", b =>
@@ -458,6 +348,59 @@ namespace Structure.Domain.Migrations
                     b.HasIndex("CreatedBy");
 
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("Structure.Data.ReservationFees", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("Daily")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DailyDisclaimer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("FacilityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("IsAc")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<Guid?>("TenantId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.HasIndex("FacilityId");
+
+                    b.ToTable("ReservationFees", (string)null);
                 });
 
             modelBuilder.Entity("Structure.Data.Role", b =>
@@ -552,6 +495,109 @@ namespace Structure.Domain.Migrations
                     b.ToTable("RoleClaims", (string)null);
                 });
 
+            modelBuilder.Entity("Structure.Data.ScheduledSlots", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte?>("End")
+                        .HasColumnType("tinyint");
+
+                    b.Property<Guid?>("FacilityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<DateTime?>("ScheduledDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ScheduledTransactionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<byte?>("Start")
+                        .HasColumnType("tinyint");
+
+                    b.Property<Guid?>("TenantId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("TransactionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.HasIndex("FacilityId");
+
+                    b.HasIndex("ScheduledTransactionId");
+
+                    b.ToTable("ScheduledSlots", (string)null);
+                });
+
+            modelBuilder.Entity("Structure.Data.ScheduledTransaction", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<Guid?>("TenantId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double?>("TotalCost")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedBy");
+
+                    b.ToTable("ScheduledTransaction", (string)null);
+                });
+
             modelBuilder.Entity("Structure.Data.Tenant", b =>
                 {
                     b.Property<Guid?>("Id")
@@ -568,12 +614,6 @@ namespace Structure.Domain.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Edition")
@@ -606,6 +646,55 @@ namespace Structure.Domain.Migrations
                     b.Property<string>("TenancyName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.HasKey("Id");
+
+                    b.ToTable("Tenants", (string)null);
+                });
+
+            modelBuilder.Entity("Structure.Data.TimeSlots", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte?>("EndTime")
+                        .HasColumnType("tinyint");
+
+                    b.Property<Guid?>("FacilityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("GenderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsWeekend")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<byte?>("StartTime")
+                        .HasColumnType("tinyint");
+
                     b.Property<Guid?>("TenantId")
                         .HasColumnType("uniqueidentifier");
 
@@ -613,7 +702,11 @@ namespace Structure.Domain.Migrations
 
                     b.HasIndex("CreatedBy");
 
-                    b.ToTable("Tenants", (string)null);
+                    b.HasIndex("FacilityId");
+
+                    b.HasIndex("GenderId");
+
+                    b.ToTable("TimeSlots", (string)null);
                 });
 
             modelBuilder.Entity("Structure.Data.User", b =>
@@ -837,57 +930,6 @@ namespace Structure.Domain.Migrations
                     b.Navigation("Page");
                 });
 
-            modelBuilder.Entity("Structure.Data.BookSlots", b =>
-                {
-                    b.HasOne("Structure.Data.User", "CreatedByUser")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Structure.Data.FacilitiesCourts", "FacilitiesCourt")
-                        .WithMany()
-                        .HasForeignKey("FacilityCourtId");
-
-                    b.HasOne("Structure.Data.Facility", "Facility")
-                        .WithMany()
-                        .HasForeignKey("FacilityId");
-
-                    b.Navigation("CreatedByUser");
-
-                    b.Navigation("FacilitiesCourt");
-
-                    b.Navigation("Facility");
-                });
-
-            modelBuilder.Entity("Structure.Data.FacilitiesCalender", b =>
-                {
-                    b.HasOne("Structure.Data.User", "CreatedByUser")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("CreatedByUser");
-                });
-
-            modelBuilder.Entity("Structure.Data.FacilitiesCourts", b =>
-                {
-                    b.HasOne("Structure.Data.User", "CreatedByUser")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Structure.Data.Facility", "Facility")
-                        .WithMany()
-                        .HasForeignKey("FacilitiesId");
-
-                    b.Navigation("CreatedByUser");
-
-                    b.Navigation("Facility");
-                });
-
             modelBuilder.Entity("Structure.Data.Facility", b =>
                 {
                     b.HasOne("Structure.Data.User", "CreatedByUser")
@@ -896,16 +938,21 @@ namespace Structure.Domain.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Structure.Data.FacilityType", "FacilityType")
-                        .WithMany()
-                        .HasForeignKey("FacilityTypeId");
-
                     b.Navigation("CreatedByUser");
-
-                    b.Navigation("FacilityType");
                 });
 
-            modelBuilder.Entity("Structure.Data.FacilityBookFrequency", b =>
+            modelBuilder.Entity("Structure.Data.FacilityTypes", b =>
+                {
+                    b.HasOne("Structure.Data.User", "CreatedByUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CreatedByUser");
+                });
+
+            modelBuilder.Entity("Structure.Data.Gender", b =>
                 {
                     b.HasOne("Structure.Data.User", "CreatedByUser")
                         .WithMany()
@@ -916,7 +963,7 @@ namespace Structure.Domain.Migrations
                     b.Navigation("CreatedByUser");
                 });
 
-            modelBuilder.Entity("Structure.Data.FacilityType", b =>
+            modelBuilder.Entity("Structure.Data.HolidayCalendar", b =>
                 {
                     b.HasOne("Structure.Data.User", "CreatedByUser")
                         .WithMany()
@@ -936,6 +983,23 @@ namespace Structure.Domain.Migrations
                         .IsRequired();
 
                     b.Navigation("CreatedByUser");
+                });
+
+            modelBuilder.Entity("Structure.Data.ReservationFees", b =>
+                {
+                    b.HasOne("Structure.Data.User", "CreatedByUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Structure.Data.Facility", "Facility")
+                        .WithMany()
+                        .HasForeignKey("FacilityId");
+
+                    b.Navigation("CreatedByUser");
+
+                    b.Navigation("Facility");
                 });
 
             modelBuilder.Entity("Structure.Data.Role", b =>
@@ -982,7 +1046,30 @@ namespace Structure.Domain.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("Structure.Data.Tenant", b =>
+            modelBuilder.Entity("Structure.Data.ScheduledSlots", b =>
+                {
+                    b.HasOne("Structure.Data.User", "CreatedByUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Structure.Data.Facility", "Facility")
+                        .WithMany()
+                        .HasForeignKey("FacilityId");
+
+                    b.HasOne("Structure.Data.ScheduledTransaction", "ScheduledTransaction")
+                        .WithMany()
+                        .HasForeignKey("ScheduledTransactionId");
+
+                    b.Navigation("CreatedByUser");
+
+                    b.Navigation("Facility");
+
+                    b.Navigation("ScheduledTransaction");
+                });
+
+            modelBuilder.Entity("Structure.Data.ScheduledTransaction", b =>
                 {
                     b.HasOne("Structure.Data.User", "CreatedByUser")
                         .WithMany()
@@ -993,10 +1080,33 @@ namespace Structure.Domain.Migrations
                     b.Navigation("CreatedByUser");
                 });
 
+            modelBuilder.Entity("Structure.Data.TimeSlots", b =>
+                {
+                    b.HasOne("Structure.Data.User", "CreatedByUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Structure.Data.Facility", "Facility")
+                        .WithMany()
+                        .HasForeignKey("FacilityId");
+
+                    b.HasOne("Structure.Data.Gender", "Gender")
+                        .WithMany()
+                        .HasForeignKey("GenderId");
+
+                    b.Navigation("CreatedByUser");
+
+                    b.Navigation("Facility");
+
+                    b.Navigation("Gender");
+                });
+
             modelBuilder.Entity("Structure.Data.User", b =>
                 {
                     b.HasOne("Structure.Data.Tenant", "Tenant")
-                        .WithMany()
+                        .WithMany("Users")
                         .HasForeignKey("TenantId");
 
                     b.Navigation("Tenant");
@@ -1072,6 +1182,11 @@ namespace Structure.Domain.Migrations
                     b.Navigation("RoleClaims");
 
                     b.Navigation("UserRoles");
+                });
+
+            modelBuilder.Entity("Structure.Data.Tenant", b =>
+                {
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("Structure.Data.User", b =>

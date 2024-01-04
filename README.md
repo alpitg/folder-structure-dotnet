@@ -47,7 +47,7 @@ Update-Database -Connection "YOUR_CONNECTION_STRING"
 dotnet tool install --global dotnet-ef
 
 dotnet ef --startup-project ../Structure.Api  migrations add initial 
-dotnet ef --startup-project ../Structure.Api database update --connection "Server=localhost; Database=sharedTenantDb; User Id=SA; Password=Password123; Trusted_Connection=false;Encrypt=false;"
+dotnet ef --startup-project ../Structure.Api database update --connection "Server=localhost; Database=test_avni; User Id=SA; Password=Password123; Trusted_Connection=false;Encrypt=false;"
 ```
 
 
