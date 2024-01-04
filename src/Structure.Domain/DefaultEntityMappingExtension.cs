@@ -27,6 +27,10 @@ namespace Structure.Domain
                 .Property(b => b.ModifiedDate)
                 .HasDefaultValueSql("GETUTCDATE()");
 
+            modelBuilder.Entity<FacilityTypes>()
+               .Property(b => b.ModifiedDate)
+               .HasDefaultValueSql("GETUTCDATE()");
+
         }
 
         public static void DefaultDeleteFilter(this ModelBuilder modelBuilder)

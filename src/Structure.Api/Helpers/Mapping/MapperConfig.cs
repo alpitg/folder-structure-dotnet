@@ -14,6 +14,7 @@ namespace Structure.Api.Helpers.Mapping
                 mc.AddProfile(new PageProfile());
                 mc.AddProfile(new RoleProfile());
                 mc.AddProfile(new UserProfile());
+                mc.AddProfile(new FacilityTypeProfile());
                 //mc.AddProfile(new NLogProfile());
                 //mc.AddProfile(new EmailTemplateProfile());
                 //mc.AddProfile(new EmailProfile());

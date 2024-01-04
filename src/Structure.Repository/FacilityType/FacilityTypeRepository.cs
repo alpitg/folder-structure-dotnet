@@ -5,12 +5,13 @@ using Structure.Repository.UnitOfWork;
 
 namespace Structure.Repository
 {
-    public class BookSlotsRepository : GenericRepository<BookSlots, StructureDbContext>,
-        IBookSlotsRepository
+    public class FacilityTypeRepository : GenericRepository<FacilityTypes, StructureDbContext>,
+          IFacilityTypeRepository
     {
-        public BookSlotsRepository(
+        public FacilityTypeRepository(
             IUnitOfWork<StructureDbContext> uow
             ) : base(uow)
-        { }
+        {
+        }
     }
 }

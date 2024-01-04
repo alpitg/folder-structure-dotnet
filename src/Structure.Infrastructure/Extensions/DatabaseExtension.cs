@@ -11,7 +11,7 @@ namespace Structure.Infrastructure.Extensions
         public static void AddDbContextExt(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DbConnectionString");
-            //var connectionString = configuration.GetValue<string>("connectionStrings:DbConnectionString");
+            //var connectionString = configuration.GetValue<string>("connectionStrings:Server=MSI;Database=/*sampleapplication*/;user=sa;password=password123");
 
             services.AddDbContextPool<StructureDbContext>(options =>
             {

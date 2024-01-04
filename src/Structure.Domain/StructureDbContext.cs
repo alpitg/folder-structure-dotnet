@@ -28,6 +28,7 @@ namespace Structure.Domain
         public DbSet<Data.Action> Actions { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<LoginAudit> LoginAudits { get; set; }
+        public DbSet<FacilityTypes> FacilityTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

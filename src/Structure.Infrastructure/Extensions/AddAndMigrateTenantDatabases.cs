@@ -12,9 +12,9 @@ namespace Structure.Infrastructure.Extensions
         public static IServiceCollection AddAndMigrateTenantDatabases(this IServiceCollection services)
         {
             var options = services.GetOptions<TenantSettings>(nameof(TenantSettings));
-            var defaultConnectionString = options.Defaults?.ConnectionString;
-            var defaultDbProvider = options.Defaults?.DBProvider;
-            if (defaultDbProvider.ToLower() == "sql")
+            var defaultConnectionString = options?.Defaults?.ConnectionString;
+            var defaultDbProvider = options?.Defaults?.DBProvider;
+            if (defaultDbProvider?.ToLower() == "sql")
             {
                 services.AddDbContext<StructureDbContext>(options =>
                 {
@@ -27,11 +27,11 @@ namespace Structure.Infrastructure.Extensions
                     });
                 });
             }
-            var tenants = options.Tenants;
+            var tenants = options?.Tenants;
             foreach (var tenant in tenants)
             {
                 string connectionString;
-                if (string.IsNullOrEmpty(tenant.ConnectionString))
+                if (string.IsNullOrEmpty(tenant?.ConnectionString))
                 {
                     connectionString = defaultConnectionString;
                 }
@@ -42,11 +42,11 @@ namespace Structure.Infrastructure.Extensions
 
                 using var scope = services.BuildServiceProvider().CreateScope();
                 var dbContext = scope.ServiceProvider.GetRequiredService<StructureDbContext>();
-                dbContext.Database.SetConnectionString(connectionString);
-                if (dbContext.Database.GetMigrations().Count() > 0)
-                {
-                    dbContext.Database.Migrate();
-                }
+                dbContext?.Database.SetConnectionString(connectionString);
+                //if (dbContext?.Database.GetMigrations().Count() > 0)
+                //{   
+                //    dbContext.Database.Migrate();
+                //}
             }
             return services;
         }
