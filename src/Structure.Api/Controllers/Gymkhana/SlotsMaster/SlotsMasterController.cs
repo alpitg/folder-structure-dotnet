@@ -64,7 +64,7 @@ namespace Structure.Api.Controllers
             {
                 return ReturnFormattedResponse(result);
             }
-            return CreatedAtAction("GetSlotsMaster", new { id = result.Data.Id }, result.Data);
+            return CreatedAtAction("GetSlotsMaster", result.Data);
         }
         /// <summary>
         /// Update SlotsMaster By Id
