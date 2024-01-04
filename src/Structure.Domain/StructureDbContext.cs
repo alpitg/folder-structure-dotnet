@@ -2,19 +2,18 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Structure.Data;
-using Structure.Data.Services;
 
 namespace Structure.Domain
 {
     public class StructureDbContext : IdentityDbContext<User, Role, Guid, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         public Guid? TenantId { get; set; }
-        private readonly ITenantService _tenantService;
+        private readonly ITenantProvider _tenantProvider;
 
-        public StructureDbContext(DbContextOptions options, ITenantService tenantService) : base(options)
+        public StructureDbContext(DbContextOptions options, ITenantProvider tenantProvider) : base(options)
         {
-            _tenantService = tenantService;
-            TenantId = _tenantService.GetTenant()?.Id;
+            _tenantProvider = tenantProvider;
+            TenantId = _tenantProvider.GetTenant()?.Id;
         }
         public override DbSet<User> Users { get; set; }
         public override DbSet<Role> Roles { get; set; }
@@ -30,6 +29,22 @@ namespace Structure.Domain
         public DbSet<LoginAudit> LoginAudits { get; set; }
         public DbSet<FacilityTypes> FacilityTypes { get; set; }
 
+
+        #region GYMKHANA
+
+        public DbSet<Facility> Facility { get; set; }
+        public DbSet<Gender> Gender { get; set; }
+        public DbSet<HolidayCalendar> HolidayCalendar { get; set; }
+        public DbSet<TimeSlots> TimeSlots { get; set; }
+        public DbSet<ReservationFees> ReservationFees { get; set; }
+        public DbSet<ScheduledSlots> ScheduledSlots { get; set; }
+        public DbSet<ScheduledTransaction> ScheduledTransaction { get; set; }
+
+
+        #endregion
+
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -40,11 +55,6 @@ namespace Structure.Domain
             {
                 b.Property(e => e.Name)
                     .IsRequired();
-
-                b.HasOne(e => e.CreatedByUser)
-                    .WithMany()
-                    .HasForeignKey(ur => ur.CreatedBy)
-                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             builder.Entity<User>(b =>
@@ -113,6 +123,9 @@ namespace Structure.Domain
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
+
+            builder.DefaultModelBuilderGymkhana();
+
             #endregion
 
             #region Table names
@@ -125,22 +138,33 @@ namespace Structure.Domain
             builder.Entity<UserLogin>().ToTable("UserLogins");
             builder.Entity<UserRole>().ToTable("UserRoles");
             builder.Entity<UserToken>().ToTable("UserTokens");
+
+            #region GYMKHANA
+            builder.Entity<Facility>().ToTable("Facilities");
+            builder.Entity<Gender>().ToTable("Genders");
+            builder.Entity<HolidayCalendar>().ToTable("HolidayCalendars");
+            builder.Entity<TimeSlots>().ToTable("TimeSlots");
+            builder.Entity<ReservationFees>().ToTable("ReservationFees");
+            builder.Entity<ScheduledSlots>().ToTable("ScheduledSlots");
+            builder.Entity<ScheduledTransaction>().ToTable("ScheduledTransaction");
+            #endregion
+
+
             #endregion
 
             builder.DefaultMappingValue();
             builder.DefaultDeleteFilter();
-            builder.DefaultTenantFilter(TenantId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var tenantConnectionString = _tenantService.GetConnectionString();
+            var tenantConnectionString = _tenantProvider.GetConnectionString();
             if (!string.IsNullOrEmpty(tenantConnectionString))
             {
-                var DBProvider = _tenantService.GetDatabaseProvider();
+                var DBProvider = _tenantProvider.GetDatabaseProvider();
                 if (DBProvider.ToLower() == "sql")
                 {
-                    optionsBuilder.UseSqlServer(_tenantService.GetConnectionString());
+                    optionsBuilder.UseSqlServer(_tenantProvider.GetConnectionString());
                 }
             }
         }
@@ -153,7 +177,8 @@ namespace Structure.Domain
                 {
                     case EntityState.Added:
                     case EntityState.Modified:
-                        entry.Entity.TenantId = TenantId;
+                        if (TenantId.HasValue)
+                            entry.Entity.TenantId = TenantId;
                         break;
                 }
             }

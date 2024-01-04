@@ -7,7 +7,7 @@ using Structure.MediatR.CommandAndQuery;
 namespace Structure.Api.Controllers
 {
     /// <summary>
-    /// Facility
+    /// FacilityType
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -17,7 +17,7 @@ namespace Structure.Api.Controllers
     {
         public IMediator _mediator { get; set; }
         /// <summary>
-        /// Facility
+        /// FacilityType
         /// </summary>
         /// <param name="mediator"></param>
         public FacilityTypeController(IMediator mediator)
@@ -25,20 +25,20 @@ namespace Structure.Api.Controllers
             _mediator = mediator;
         }
         /// <summary>
-        /// Get Facility By Id
+        /// Get FacilityType By Id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}", Name = "GetFacility")]
+        [HttpGet("{id}", Name = "GetFacilityType")]
         [Produces("application/json", "application/xml", Type = typeof(FacilityTypeDto))]
-        public async Task<IActionResult> GetFacility(Guid id)
+        public async Task<IActionResult> GetFacilityType(Guid id)
         {
-            var getFacilityQuery = new GetFacilityTypeQuery { Id = id };
-            var result = await _mediator.Send(getFacilityQuery);
+            var getFacilityTypeQuery = new GetFacilityTypeQuery { Id = id };
+            var result = await _mediator.Send(getFacilityTypeQuery);
             return ReturnFormattedResponse(result);
         }
         /// <summary>
-        /// Get All Facilitys
+        /// Get All FacilityTypes
         /// </summary>
         /// <returns>Test</returns>
         /// <response code="200">Returns the newly created item</response>
@@ -46,50 +46,50 @@ namespace Structure.Api.Controllers
         [Produces("application/json", "application/xml", Type = typeof(List<FacilityTypeDto>))]
         public async Task<IActionResult> GetFacilities()
         {
-            var getAllFacilityQuery = new GetAllFacilityTypeQuery { };
-            var result = await _mediator.Send(getAllFacilityQuery);
+            var getAllFacilityTypeQuery = new GetAllFacilityTypeQuery { };
+            var result = await _mediator.Send(getAllFacilityTypeQuery);
             return Ok(result);
         }
         /// <summary>
-        /// Create a Facility
+        /// Create a FacilityType
         /// </summary>
-        /// <param name="addFacilityCommand"></param>
+        /// <param name="addFacilityTypeCommand"></param>
         /// <returns></returns>
-        [HttpPost("")]
+        [HttpPost]
         [Produces("application/json", "application/xml", Type = typeof(FacilityTypeDto))]
-        public async Task<IActionResult> AddFacility(AddFacilityTypeCommand addFacilityCommand)
+        public async Task<IActionResult> AddFacilityType(AddFacilityTypeCommand addFacilityTypeCommand)
         {
-            var result = await _mediator.Send(addFacilityCommand);
+            var result = await _mediator.Send(addFacilityTypeCommand);
             if (!result.Success)
             {
                 return ReturnFormattedResponse(result);
             }
-            return CreatedAtAction("GetFacility", new { id = result.Data.Id }, result.Data);
+            return CreatedAtAction("AddFacilityType", new { id = result.Data.Id }, result.Data);
         }
         /// <summary>
-        /// Update Facility By Id
+        /// Update FacilityType By Id
         /// </summary>
         /// <param name="Id"></param>
         /// <param name="updateFacilityCommand"></param>
         /// <returns></returns>
         [HttpPut("{Id}")]
         [Produces("application/json", "application/xml", Type = typeof(FacilityTypeDto))]
-        public async Task<IActionResult> UpdateFacility(Guid Id, UpdateFacilityTypeCommand updateFacilityCommand)
+        public async Task<IActionResult> UpdateFacility(Guid Id, UpdateFacilityTypeCommand updateFacilityTypeCommand)
         {
-            updateFacilityCommand.Id = Id;
-            var result = await _mediator.Send(updateFacilityCommand);
+            updateFacilityTypeCommand.Id = Id;
+            var result = await _mediator.Send(updateFacilityTypeCommand);
             return ReturnFormattedResponse(result);
         }
         /// <summary>
-        /// Delete Facility By Id
+        /// Delete FacilityType By Id
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
         [HttpDelete("{Id}")]
         public async Task<IActionResult> DeleteFacility(Guid Id)
         {
-            var deleteFacilityCommand = new DeleteFacilityTypeCommand { Id = Id };
-            var result = await _mediator.Send(deleteFacilityCommand);
+            var deleteFacilityTypeCommand = new DeleteFacilityTypeCommand { Id = Id };
+            var result = await _mediator.Send(deleteFacilityTypeCommand);
             return ReturnFormattedResponse(result);
         }
     }

@@ -19,9 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Migrations\20231017221126_initial_data.sql" />
+    <None Remove="Migrations\20231028074448_initial_data.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\20231017221126_initial_data.sql" />
+    <EmbeddedResource Include="Migrations\20231028074448_initial_data.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

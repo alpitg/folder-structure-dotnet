@@ -19,4 +19,7 @@
 	  <ProjectReference Include="..\Structure.Data\Structure.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\.editorconfig" />
+  </ItemGroup>
 </Project>

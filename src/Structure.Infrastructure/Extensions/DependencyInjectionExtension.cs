@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Structure.Data.Services;
+using Structure.Data;
 using Structure.Repository;
 using Structure.Repository.UnitOfWork;
 
@@ -11,7 +11,7 @@ namespace Structure.Infrastructure.Extensions
         {
             services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
             services.AddScoped<IPropertyMappingService, PropertyMappingService>();
-            services.AddTransient<ITenantService, TenantService>();
+            services.AddTransient<ITenantProvider, TenantProvider>();
             services.AddScoped<ITenantRepository, TenantRepository>();
             services.AddScoped<IPageRepository, PageRepository>();
             services.AddScoped<IActionRepository, ActionRepository>();
@@ -22,6 +22,12 @@ namespace Structure.Infrastructure.Extensions
             services.AddScoped<IRoleClaimRepository, RoleClaimRepository>();
             services.AddScoped<ILoginAuditRepository, LoginAuditRepository>();
             services.AddScoped<IFacilityTypeRepository, FacilityTypeRepository>();
+
+            // GYMKHANA
+            services.AddScoped<IFacilityRepository, FacilityRepository>();
+            services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<IHolidayCalendarRepository, HolidayCalendarRepository>();
+            services.AddScoped<ISlotsMasterRepository, SlotsMasterRepository>();
 
         }
     }

@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {}
+    "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj": {
+    "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
+        "projectUniqueName": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj",
         "projectName": "Structure.Data",
-        "projectPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Data\\Structure.Data.csproj",
-        "packagesPath": "C:\\Users\\conne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conne\\OneDrive\\Documents\\Structure\\folder-structure-dotnet\\src\\Structure.Data\\obj\\",
+        "projectPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/Structure.Data.csproj",
+        "packagesPath": "/Users/alpitg/.nuget/packages/",
+        "outputPath": "/Users/alpitg/Documents/Alpit/Projects/Structure/folder-structure-dotnet/src/Structure.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\conne\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/alpitg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
         }
       }
     }

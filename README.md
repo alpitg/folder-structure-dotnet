@@ -26,6 +26,13 @@ dotnet build
 dotnet
 ```
 
+### SQL server - Setup SQL Server in MAC
+```
+
+docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=Password123" -e "MSSQL_PID=Developer" -e "MSSQL_USER=SA" -p 1433:1433 -d --name=sql mcr.microsoft.com/azure-sql-edge
+
+```
+
 ### Migration - Update-Database
 
 ```c#
@@ -90,6 +97,67 @@ INSERT [dbo].[Users] ([Id], [FirstName]) VALUES (N'1a5cf5b9-ead8-495c-8719-2d8be
 GO
 
 -- DROP database
+use master
 alter database [sharedTenantDb] set single_user with rollback immediate
 drop database [sharedTenantDb]
+```
+
+
+### reference for Email confirmation
+```c#
+public async Task<IActionResult> Register(string userName, string password)
+        {
+            if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
+            {
+                return BadRequest("Invalid user name or password.");
+            }
+
+            var user = new ApplicationUser { UserName = userName, Email = userName };
+
+            var tenant = context.Tenants.ToList().Where(t => t.Hosts.Split(',').Where(h => h.Contains(this.HttpContext.Request.Host.Value)).Any()).FirstOrDefault();
+            if (tenant != null)
+            {
+                userManager.UserValidators.Clear();
+
+                if (context.Users.Any(u => u.TenantId == tenant.Id && u.UserName == user.Name))
+                {
+                    return BadRequest("User with the same name already exist for this tenant.");
+                }
+            }
+
+            var result = await userManager.CreateAsync(user, password);
+
+            if (result.Succeeded)
+            {
+                try
+                {
+                    var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code }, protocol: Request.Scheme);
+
+                    var body = string.Format(@"<a href=""{0}"">{1}</a>", callbackUrl, "Please confirm your registration");
+
+                    await SendEmailAsync(user.Email, "Confirm your registration", body);
+
+
+                    var newUser = context.Users.FirstOrDefault(u => u.TenantId == tenant.Id && u.UserName == userName);
+                    if (newUser != null && tenant != null)
+                    {
+                        newUser.TenantId = tenant.Id;
+                        context.Users.Update(newUser);
+                        context.SaveChanges();
+                    }
+
+                    return Ok();
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+
+            var message = string.Join(", ", result.Errors.Select(error => error.Description));
+
+            return BadRequest(message);
+        }
 ```

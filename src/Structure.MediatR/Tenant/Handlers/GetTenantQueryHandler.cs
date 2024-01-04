@@ -5,6 +5,7 @@ using Structure.Repository;
 using MediatR;
 using Structure.Helper;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace Structure.MediatR.Handlers
 {
@@ -26,7 +27,11 @@ namespace Structure.MediatR.Handlers
         }
         public async Task<ServiceResponse<TenantDto>> Handle(GetTenantQuery request, CancellationToken cancellationToken)
         {
-            var entity = await _tenantRepository.FindAsync(request.Id);
+            var entity = await _tenantRepository
+               .AllIncluding(c => c.Users)
+               .Where(c => c.Id == request.Id)
+               .FirstOrDefaultAsync();
+
             if (entity != null)
                 return ServiceResponse<TenantDto>.ReturnResultWith200(_mapper.Map<TenantDto>(entity));
             else
