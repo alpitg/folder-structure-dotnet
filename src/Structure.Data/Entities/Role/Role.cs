@@ -14,11 +14,11 @@ namespace Structure.Data
         public DateTime? DeletedDate { get; set; }
         public Guid? DeletedBy { get; set; }
         [ForeignKey("CreatedBy")]
-        public User? CreatedByUser { get; set; }
+        public Users? CreatedByUser { get; set; }
         [ForeignKey("ModifiedBy")]
-        public User? ModifiedByUser { get; set; }
+        public Users? ModifiedByUser { get; set; }
         [ForeignKey("DeletedBy")]
-        public User? DeletedByUser { get; set; }
+        public Users? DeletedByUser { get; set; }
         public bool IsSuperRole { get; set; } = false;
         public virtual ICollection<UserRole> UserRoles { get; set; }
         public virtual ICollection<RoleClaim> RoleClaims { get; set; }
