@@ -5,6 +5,6 @@ namespace Structure.Data
 {
     public class UserToken : IdentityUserToken<Guid>
     {
-        public virtual User User { get; set; } = null;
+        public virtual Users User { get; set; } = null;
     }
 }
