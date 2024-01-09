@@ -10,9 +10,9 @@ namespace Structure.Data.Dto
 
         public Guid? posmWorkflowTransitionId { get; set; }
 
-        public UsersDto? user1 { get; set; }
+        public User? users { get; set; }
 
-        public Guid? user1Id { get; set; }
+        public Guid? usersId { get; set; }
 
     }
 }

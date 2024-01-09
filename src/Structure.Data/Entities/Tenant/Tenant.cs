@@ -8,7 +8,7 @@ namespace Structure.Data
     {
         public Tenant()
         {
-            Users = new List<Users>();
+            Users = new List<User>();
         }
 
         public Guid? Id { get; set; }
@@ -36,6 +36,6 @@ namespace Structure.Data
         public Guid CreatedBy { get; set; }
         public bool IsDeleted { get; set; } = false;
 
-        public virtual ICollection<Users> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

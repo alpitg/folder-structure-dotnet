@@ -2,7 +2,7 @@
 
 namespace Structure.Data
 {
-    public class Users : IdentityUser<Guid>, IMustHaveTenant
+    public class User : IdentityUser<Guid>, IMustHaveTenant
     {
         public Guid? TenantId { get; set; }
         public string? FirstName { get; set; }

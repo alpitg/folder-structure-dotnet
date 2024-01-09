@@ -8,9 +8,9 @@ namespace Structure.Data.Dto
 
         public PosmWorkflowStepsDetailsDto? PosmWorkflowSteps { get; set; }
 
-        public User1? User1 { get; set; }
+        public User? user{ get; set; }
 
-        public Guid? UserId { get; set; }
+        public Guid? UsersId { get; set; }
 
         public PosmStatusDto? posmStatus { get; set; }
 

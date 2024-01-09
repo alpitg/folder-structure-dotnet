@@ -5,6 +5,6 @@ namespace Structure.Data
 {
     public class UserLogin : IdentityUserLogin<Guid>
     {
-        public virtual Users User { get; set; }
+        public virtual User? User { get; set; }
     }
 }
