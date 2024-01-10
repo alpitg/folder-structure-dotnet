@@ -7,11 +7,11 @@ namespace Structure.Data
 
         public Guid? Id { get; set; }
 
-        public string? title { get; set; }
+        public string? Title { get; set; }
 
-        public int created_by { get; set; } 
+        public int Created_by { get; set; } 
 
-        public DateTime created_at { get; set; }    
+        public DateTime Created_at { get; set; }    
 
 
         public Client? Client { get; set; }

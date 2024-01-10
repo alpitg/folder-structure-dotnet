@@ -9,9 +9,9 @@ namespace Structure.Data.Dto
 
         public int StepId { get; set; }
 
-        public PosmWorkflowDto? posmWorkflow { get; set; }
+        public PosmWorkflowDto? PosmWorkflow { get; set; }
 
-        public Guid? posmWorkflowId { get; set; }   
+        public Guid? PosmWorkflowId { get; set; }   
 
     }
 }

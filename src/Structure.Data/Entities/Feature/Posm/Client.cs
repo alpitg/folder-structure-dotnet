@@ -14,9 +14,9 @@ namespace Structure.Data
 
         public int? Pin { get; set; }   
 
-        public string? primaryContact { get; set; } 
+        public string? PrimaryContact { get; set; } 
 
-        public string? primaryPhoneNumnber { get; set; }
+        public string? PrimaryPhoneNumnber { get; set; }
 
     }
 }

@@ -9,9 +9,9 @@ namespace Structure.Data
 
         public Guid? Id { get; set; }   
 
-        public PosmWorkflowTransitAssignmentDto? posmWorkflowTransitAssignment { get; set; }
+        public PosmWorkflowTransitAssignmentDto? PosmWorkflowTransitAssignment { get; set; }
 
-        public Guid? posmWorkflowTransitAssignmentId { get; set; }
+        public Guid? PosmWorkflowTransitAssignmentId { get; set; }
 
         public DateTime DeploymentDate { get; set; }
 

@@ -6,13 +6,13 @@ namespace Structure.Data.Dto
 
         public Guid? Id { get; set; }
 
-        public PosmWorkflowTransitionDto? posmWorkflowTransition { get; set; }
+        public PosmWorkflowTransitionDto? PosmWorkflowTransition { get; set; }
 
-        public Guid? posmWorkflowTransitionId { get; set; }
+        public Guid? PosmWorkflowTransitionId { get; set; }
 
-        public User? users { get; set; }
+        public User? Users { get; set; }
 
-        public Guid? usersId { get; set; }
+        public Guid? UsersId { get; set; }
 
     }
 }

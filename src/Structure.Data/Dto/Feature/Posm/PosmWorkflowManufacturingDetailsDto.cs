@@ -7,9 +7,9 @@ namespace Structure.Data.Dto
 
         public Guid? Id { get; set; }
 
-        public  PosmWorkflowDto? posmWorkFlow { get; set; }
+        public  PosmWorkflowDto? PosmWorkFlow { get; set; }
 
-        public Guid? posmWorkFlowId { get; set; }
+        public Guid? PosmWorkFlowId { get; set; }
 
         public string? ManufacturingCompany { get; set; }
 

@@ -7,9 +7,9 @@ namespace Structure.Data
 
         public Guid? Id { get; set; }
 
-        public PosmWorkflowTransition? posmWorkflowTransition { get; set; }  
+        public PosmWorkflowTransition? PosmWorkflowTransition { get; set; }  
 
-        public Guid? posmWorkflowTransitionId { get; set; }
+        public Guid? PosmWorkflowTransitionId { get; set; }
 
         public int? Quantity { get; set; }
 

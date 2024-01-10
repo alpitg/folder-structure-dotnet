@@ -9,12 +9,12 @@ namespace Structure.Data
 
         public PosmWorkflowStepsDetails? PosmWorkflowSteps { get; set; }
 
-        public User? users{ get; set; }
+        public User? Users{ get; set; }
 
         public Guid? UsersId { get; set; }
 
-        public PosmStatus? posmStatus { get; set; } 
+        public PosmStatus? PosmStatus { get; set; } 
         
-        public Guid? posmStatusId { get; set; }
+        public Guid? PosmStatusId { get; set; }
     }
 }

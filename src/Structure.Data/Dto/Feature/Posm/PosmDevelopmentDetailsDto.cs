@@ -5,9 +5,9 @@
 
         public Guid? Id { get; set; }
 
-        public PosmWorkflowTransitAssignment? posmWorkflowTransitAssignment { get; set; }
+        public PosmWorkflowTransitAssignment? PosmWorkflowTransitAssignment { get; set; }
 
-        public Guid? posmWorkflowTransitAssignmentId { get; set; }
+        public Guid? PosmWorkflowTransitAssignmentId { get; set; }
 
         public DateTime? DeploymentDate { get; set; }
 

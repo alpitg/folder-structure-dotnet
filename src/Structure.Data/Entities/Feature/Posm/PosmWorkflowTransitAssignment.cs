@@ -11,8 +11,8 @@ namespace Structure.Data
 
         public Guid? posmWorkflowTransitionId { get; set; }
 
-       public User? users { get; set; }
+       public User? Users { get; set; }
 
-        public Guid? user1Id { get; set; }   
+        public Guid? User1Id { get; set; }   
     }
 }
