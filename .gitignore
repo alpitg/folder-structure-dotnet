@@ -366,6 +366,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+**/bin/*
+**/obj/*
 src/Structure.Api/obj
 src/Structure.Data/obj
 src/Structure.Domain/obj
@@ -374,3 +376,11 @@ src/Structure.Helper/obj
 src/Structure.Infrastructure/obj
 src/Structure.MediatR/obj
 src/Structure.Repository/obj
+src/Structure.Domain/obj/project.assets.json
+src/Structure.Domain/obj/Structure.Domain.csproj.nuget.dgspec.json
+src/Structure.Domain/obj/Structure.Domain.csproj.nuget.g.props
+src/Structure.Domain/obj/Structure.Domain.csproj.nuget.g.targets
+src/Structure.Domain/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.assets.cache
+src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.csproj.FileListAbsolute.txt
+src/Structure.Domain/obj/Debug/net6.0/Structure.Domain.GlobalUsings.g.cs
