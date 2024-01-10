@@ -1,6 +1,6 @@
 ﻿namespace Structure.Data.Dto
 {
-    public class    UserDto
+    public class UserDto
     {
         public Guid Id { get; set; }
         public Guid? TenantId { get; set; }

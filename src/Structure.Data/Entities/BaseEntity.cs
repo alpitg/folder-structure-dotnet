@@ -13,7 +13,7 @@ namespace Structure.Data
         public Guid CreatedBy { get; set; }
 
         [ForeignKey("CreatedBy")]
-        public User CreatedByUser { get; set; }
+        public User? CreatedByUser { get; set; }
 
         private DateTime _modifiedDate;
         public DateTime ModifiedDate
